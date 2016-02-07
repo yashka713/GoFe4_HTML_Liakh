@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	background-color: black;;
+	font-family: 'Times New Roman';
+}
+.main_page {
+	margin-top: 0.3%;
+	left: 30%;
+	width: 40%;
+	margin-left: 25%;
+	margin-bottom:5%;
+	background-color:#FFFFFF;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 0.5% 3% 5% 5%;
+}
+
+.background {
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	background-color: #D8D8D8;
+	font-family: 'Times New Roman';
+	padding-top:0.5%;
+	border-bottom-left-radius:1%;
+	border-bottom-right-radius:1%;
+		
+}
+
+.title {
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.photo {
+	text-align: center;
+}
+
+.info {
+	padding-left: 3%;
+	
+}
+
+a{
+	color: #0000FF;
+}
+
+.blue{
+	color:#0000FF;
+}
+
+li {
+margin-left: -4%;
+}
