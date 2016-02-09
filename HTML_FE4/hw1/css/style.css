@@ -23,7 +23,6 @@ body {
 	padding-top:0.5%;
 	position: absolute;
 	width: 100%;
-
 }
 
 .title {
@@ -38,6 +37,10 @@ body {
 
 .info {
 	padding-left: 3%;
+	padding-bottom: 15px;
+}
+.border-down {
+	border-bottom: 1px solid black;
 }
 
 a {
@@ -49,5 +52,7 @@ a {
 }
 
 li {
-margin-left: -4%;
+	margin-left: -4%;
+	padding-bottom: 7px;
 }
+
