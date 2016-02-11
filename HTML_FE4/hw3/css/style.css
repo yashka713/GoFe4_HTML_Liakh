@@ -1,0 +1,118 @@
+body{
+    background-color: #f9f9f9;
+    margin: 0;
+}
+.page{
+    background-color:#FFFFFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0.5% 3% 7% 5%;
+    margin-left: 9%;
+    margin-right: 9%;
+    width: 73%;
+}
+.logo{
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+/*TOP PANEL*/
+.top-menu{
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/top-panel.png);
+    position: absolute;
+    width: 71%;
+}
+.top-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    width: 100%;
+}
+.top-menu li{
+    display: block;
+    float: left;
+    padding: 10px 45px;
+    min-height: 25px;
+    font-family: Calibri;
+    font-size: 14px;
+    color: white;
+}
+.items-top:hover{
+    background-color: #474747;
+    border-left: 1px solid rgb(131, 131, 131);
+    border-right: 1px solid rgb(131, 131, 131);
+}
+/*MAIN PANEL*/
+.mainpanel{
+    padding-top: 60px;
+}
+/*LEFT PANEL*/
+.left-panel{
+    width: 215px;
+}
+.leftpanel {
+    margin-left: 0px;
+    list-style-type: none;
+    font-size: 12px;
+    padding:0px;
+    border: 1px solid #c8c8c8;
+    float: left;
+    width: 215px;
+}
+.leftpanel li {
+    padding: 8px 0 8px 7px;
+    font-family: Calibri;
+    font-size: 14px;
+    float: none;
+}
+.items-left:hover{
+    background-color: #f9f9f9;
+    padding-left: 20px;
+}
+/*BIKE*/
+.bike img{
+    border: 1px solid #c8c8c8;
+    margin-left: 50px;
+    padding: 40px 94px 40px 94px;
+    margin-top: 10px;
+}
+/*TEXT*/
+.text {
+    font-family: Calibri;
+    margin: 40px 30px 0 270px;
+    padding-right: 20px;
+}
+/*BOTTOM MENU*/
+.bottom-menu {
+    padding: 0;
+    margin:15px 0 15px 0;
+    background-image: url(../img/bottom-panel.png);
+    height: 40px;
+    position: absolute;
+    width: 71%;
+}
+.bottom-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.bottom-menu li{
+    display: block;
+    float: left;
+    padding: 10px 45px;
+    min-height: 25px;
+    font-family: Calibri;
+    font-size: 14px;
+}
+.items-bottom:hover{
+    text-decoration: underline;
+}
+.signature{
+    padding: 10px 30px 10px 0;
+    min-height: 25px;
+    font-family: Calibri;
+    font-size: 14px;
+    margin: 0px 0 7px 7px;
+    text-align: right;
+}
