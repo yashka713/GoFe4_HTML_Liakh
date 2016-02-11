@@ -33,5 +33,6 @@ a img,:link img,:visited img { border:none }
 address { font-style:normal }
 body{
     font-family: Calibri;
+    background-color: #f9f9f9;
 }
 /* more varnish stripping as necessary... */
