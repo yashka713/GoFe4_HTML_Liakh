@@ -1,10 +1,11 @@
 .page{
     background-color:#FFFFFF;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding: 0.5% 3% 3% 5%;
+    padding: 0.5% 3% 0% 5%;
     margin-left: 9%;
     margin-right: 9%;
     width: 73%;
+    position: relative;
 }
 .logo{
     margin-top: 5%;
@@ -29,28 +30,19 @@
 }
 /*MAIN PANEL*/
 .mainpanel{
-    padding-top: 7%;
+    margin-top: 12%;
+    position: absolute;
 }
 /*LEFT PANEL*/
-.left-panel{
-    width: 215px;
-}
 .leftpanel {
-    list-style-type: none;
     font-size: 12px;
-    padding:0px;
     float: left;
     width: 215px;
 }
 .leftpanel li {
     padding: 3% 0 3% 3%;
     font-size: 14px;
-    border-top: 0.5px solid #c8c8c8;
-    border-right: 0.5px solid #c8c8c8;
-    border-left: 0.5px solid #c8c8c8;
-}
-.last{
-    border-bottom: 0.5px solid #c8c8c8;
+    border: 0.5px solid #c8c8c8;
 }
 .items-left:hover{
     background-color: #f9f9f9;
@@ -64,38 +56,29 @@
     width: 45%;
     margin-right: 3%;
 }
+.mainpanel:after{
+    clear: both;
+}
 /*TEXT*/
 .text {
-    display: inline-block;
-    margin: 4% 1% 0 33%;
+    display: block;
+    margin: 5% 5% 0 30%;
     padding-right: 3%;
-    overflow: hidden;
-    font-size: 14px;
-    line-height: 1.4em;
+    float: right;
 }
-
 /*BOTTOM MENU*/
 .bottom-menu {
-    margin: 5% 3% 2% 0;
-    background-color: #e1e1e1;
+    width: 73%;
 }
 .bottom-menu li{
-    display: inline;
-    padding: 2% 8% 2% 3%;
-    font-size: 14px;
-    background-color: #e1e1e1;
     float: left;
-}
-.bottom-menu ul{
-    line-height:0;
-    font-size:0;
+    padding: 2% 3% 2% 3%;
+    font-size: 14px;
+    height: 2%;
+    background-color: #e1e1e1;
 }
 .items-bottom:hover{
     text-decoration: underline;
 }
 .signature{
-    padding: 1% 3% 2% 3%;
-    font-size: 14px;
-    background-color: #e1e1e1;
-    text-align: right;
 }
