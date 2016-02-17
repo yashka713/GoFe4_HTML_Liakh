@@ -34,5 +34,6 @@ address { font-style:normal }
 body{
     font-family: Tahoma;
     background-image: url("../img/background.png");
+    height: 100%;
 }
 /* more varnish stripping as necessary... */

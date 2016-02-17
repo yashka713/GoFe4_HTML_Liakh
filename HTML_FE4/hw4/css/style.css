@@ -12,36 +12,37 @@
 }
 .logo img{
     width: 128%;
-    margin-left: 3%;
+    margin-left: 8%;
     position: relative;
 }
 .logo-text{
-    top: 11%;
-    left:14.5%;
-    font-size: 100%;
+    top: 17%;
+    left:13%;
+    font-size: 90%;
     color: #128aa7;
     position: absolute;
 }
 .contact{
     float: right;
     margin:1% 4% 0 0;
+    width: 15%;
 }
 .contact-text{
     color: #128aa7;
-    font-size: 126%;
+    font-size: 90%;
 }
-
 .country{
     float: right;
     clear: right;
-    margin: 2% 3% 0 0;
-    width: 50%;
+    margin: 6% 3% 0 0;
+    width: 60%;
 }
 .country li{
     float: right;
     text-align: center;
     margin: 0 1% 0 1%;
     color: #128aa7;
+    font-size: 60%;
     text-decoration: underline;
 }
 .header clearfix:after{
@@ -72,32 +73,32 @@
     float: left;
     background-color: #333333;
     color: white;
-    padding:0.5% 5.4% 0.5% 4.25%;
+    padding:0.5% 4.3% 0.5% 4.4%;
     border-bottom: 1px solid black;
-
+    font-size: 80%;
 }
 .down-menu{
     position: relative;
 }
-.down-menu:after{
+.down-menu span:after{
     content: "";
     position: absolute;
     border: 5px solid;
     border-color: #eee transparent transparent transparent;
-    top:15px;
-    left: 68%;
+    top:50%;
+    margin-left: 5px;
 }
 .s-menu{
     position: absolute;
-    width: 100%;
     /*top:-9999em;*/
     opacity: 0;
-    left: 23%;
-    padding-top: 0;
+    left: 42px;
 }
 .s-menu li{
-    padding:1% 43% 1% 0.67em;
+    padding:1px 20px 5px 5px;
     border:none;
+    font-size: 100%;
+    clear: both;
 }
 .down-menu:hover .s-menu{
     opacity: 1;
@@ -107,24 +108,40 @@
 /*CONTENT*/
 .content{
     clear: both;
+    font-size: 80%;
+    padding-bottom: 25%;
+    text-align: center;
 }
 .information{
     float: left;
-    width: 15%;
+    width: 22%;
     background-color: #c8c8c8;
-    word-spacing:1em;
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
 }
 .empty{
     float: left;
-    width: 70%;
-    background-color: aqua;
+    width: 56%;
 }
 .news{
     float: right;
-    width: 15%;
+    width: 22%;
     background-color: #c8c8c8;
-    word-spacing:0.5em;
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
 }
 h1{
     text-align: center;
+    padding: 3% 0 3% 0;
+}
+p{
+    word-spacing:0.3em;
+    padding-left: 5%;
+}
+.signature p{
+    text-align: center;
+    font-size: 75%;
+    color: #dee7ee;
+    margin: 0;
+    padding: 0;
 }
