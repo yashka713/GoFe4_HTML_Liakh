@@ -1,0 +1,83 @@
+.main-form{
+    position: relative;
+}
+.center-form{
+    background-color: rgba(00,00,00, 0.6);
+    width: 500px;
+    height: 60%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top:22%;
+    left: 29%;
+}
+.some-action{
+    margin: 6% 0 0 5%;
+}
+.some-text{
+    background: transparent;
+    padding: 3% 0 3% 0;
+    border-bottom: 2px solid #b3bba4;
+    font-size: 150%;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    margin: 3% 0 3% 0;
+    width: 50%;
+    padding: 2% 0 2% 0;
+    background-color: black;
+    border-radius: 3px;
+    border-color: transparent;
+    color: white;
+}
+#placeholder{
+    font-family: helvetica, sans-serif;
+    color: grey;
+}
+input[type="text"]:focus{
+    background-color: #2a77c3;
+    box-shadow: 0 0 3px 3px rgba(84,172,240,1);
+}
+input[type="email"]:focus{
+    background-color: #2a77c3;
+    box-shadow: 0 0 3px 3px rgba(84,172,240,1);
+}
+input[type="password"]:focus{
+    background-color: #2a77c3;
+    box-shadow: 0 0 3px 3px rgba(84,172,240,1);
+}
+input[type="checkbox"]{
+    width: auto;
+}
+input[type="submit"] {
+    background-image:url("../img/create.png");
+    border-radius: 2px;
+    border: none;
+    width: 30%;
+    color: white;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    margin: 5% 0 3% 0;
+}
+input[type="image"]{
+    width: 50%;
+}
+label{
+    color: white;
+}
+.form-ou{
+    position: relative;
+}
+.ou {
+    font-size: 100%;
+    left: 48%;
+    top: 29%;
+    position: absolute;
+    color: #999999;
+}
+.img-ou{
+    width: 50%;
+}
+p{
+    margin-left: 22%;
+    width: 55%;
+}
