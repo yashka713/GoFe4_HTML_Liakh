@@ -1,91 +1,67 @@
-tr, td{
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    padding: 0;
-    border-spacing:0px;
-}
 table{
     margin: 30px 0 0 30px;
     border-collapse: collapse;
+    padding: 0;
+}
+td{
+    border: 3px solid black;
+}
+tr {
+    height: 20px;
+}
+.row2{
+    height: 60px;
+}
+.row3{
+    height: 60px;
 }
 .box1{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
 }
 .box3{
-    border-bottom: 3px solid #000;
-    background-color: yellow;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    background-color: #ffee6f;
 }
 .box4{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+    border-left: 1px solid transparent;
 }
 .box5{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-    background-color: coral;
+    background-color: #ff652c;
 }
 .box6{
-    border-bottom: 3px solid #000;
-    background-color: yellow;
+    border-right: 1px solid transparent;
+    background-color: #ffee6f;
 }
 .box7{
-    border-bottom: 3px solid #000;
+    border-left: 1px solid transparent;
 }
-.box8{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+.box9{
+    border-right: 1px solid transparent;
 }
-.box9{}
-.box10{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-}
-.box11{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-    background-color: #474747;
-}
-.box12{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-    background-color: #474747;
+.box10-11-15-16{
+    background-color: #0e070a;
 }
 .box13{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+    border-right: 1px solid transparent;
 }
 .box14{
-    border-bottom: 3px solid #000;
-}
-.box15{
-    border-right: 3px solid #000;
-    background-color: yellow;
-}
-.box16{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-    background-color: #474747;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: #ffee6f;
 }
 .box17{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-    background-color: #474747;
+    border-right: 1px solid transparent;
+    background-color: #064581;
 }
 .box18{
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+    border-bottom: 1px solid transparent;
 }
 .box19{
-    border-bottom: 3px solid #000;
-    background-color: royalblue;
+    background-color: #0e070a;
 }
 .box20{
-    border-right: 3px solid #000;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
-.box21{
-    border-bottom: 3px solid #000;
-    background-color: #474747;
-}
-.box22{}
