@@ -1,0 +1,77 @@
+/*wrapper*/
+.wrapper {
+    margin-left: 196px;
+}
+/*header*/
+header{
+    margin-top: 19px;
+}
+.top-menu{
+    float: left;
+    margin: 6px 0 0 7px;
+}
+.img-phone{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0e3a5e url("../img/phone.png") center;
+    margin-top: 5px;
+}
+.phone-number{
+    float: left;
+    color: #6d767a;
+    font-size: 12pt;
+    padding: 0 0 0 5px;
+    letter-spacing: 1.4px;
+    margin-top: 6px;
+}
+.some-action{
+    float: left;
+    margin: 0 0 2px 15px ;
+    padding: 4px 6px 3px 4px;
+    background-color: #0e3a5e;
+    font-size: 8pt;
+    border-radius: 4px;
+}
+.auto-img{
+    float: left;
+    width: 18px;
+    height: 19px;
+    background: #0e3a5e url("../img/authorization-form.png") center;
+    background-blend-mode: normal;
+    margin-right: 2px;
+}
+input[type="text"], input[type="password"]{
+    width: 108px;
+    height: 14px;
+    padding-left: 2px;
+    margin-right: 5px;
+}
+.entry{
+    color: white;
+    padding:0 7px 0 2px;
+}
+.border-entry{
+    border-right: 1px solid white;
+}
+.lost-password{
+    color: #8b96a0;
+    margin-left: 16px;
+    font-size: 8pt;
+    letter-spacing: 0.65pt;
+    border-bottom: 1px solid #8b96a0;
+    padding-bottom: 1px;
+}
+.map-site{
+    float: left;
+    margin-left: 18px;
+    border-radius: 10px;
+    border: 1px solid #8b96a0;
+    padding: 0 11px 1px 9px;
+}
+.logo img{
+    clear: both;
+    margin-top: 8px;
+}
+/*sidebar*/
