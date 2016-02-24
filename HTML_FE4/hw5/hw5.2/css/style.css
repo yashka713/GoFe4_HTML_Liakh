@@ -6,15 +6,33 @@ table{
 td{
     border: 3px solid black;
 }
-tr {
+/*columns*/
+.col1{
+    width:20px;
+}
+.col2,.col3{
+    width:30px;
+}
+.col4{
+    width:60px;
+}
+.col5{
+    width:40px;
+}
+/*rows*/
+.row1{
     height: 20px;
 }
-.row2{
+.row2, .row3{
     height: 60px;
 }
-.row3{
-    height: 60px;
+.row4, .row5{
+    height: 30px;
 }
+.row6, .row7{
+    height: 20px;
+}
+/*box*/
 .box1{
     border-left: 1px solid transparent;
     border-top: 1px solid transparent;
