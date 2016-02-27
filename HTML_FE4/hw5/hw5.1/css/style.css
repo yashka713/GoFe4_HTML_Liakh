@@ -5,47 +5,39 @@
     width: 100%;
     height: 1024px;
 }
-/*First menu*/
 .menu{
     display: block;
     width: 100%;
-    height: 28px;
     background-color:#07518f;
-    margin-right: 2%;
+    overflow: hidden;
 }
-img {
-    width: 80%;
-    margin: 20% 0 0 50%;
-    text-align: center;
-    padding-top: 2px;
+.flag{
+    width: 20px;
+    padding: 2px 2px 5px 21px;
+    float: right;
+    margin: 3px 0 0 0;
+    border-left: 1px solid #56a2dc;
 }
-ul li:nth-child(1){
+a{
+    color: white;
+}
+.t-menu{
     margin-right: 1.5%;
 }
-ul li:nth-child(4){
-    border-left: 1px solid #56a2dc;
-    padding: 0 20px 0 20px;
-}
-ul li:nth-child(4):hover{
-    padding: 0 20px 0 20px;
-    background-color:#07518f;
-}
-.menu li{
+.f-item, .s-item{
+    padding: 7px 10px 10px 10px;
     float: right;
-    padding: 5px 20px 7px 20px;
 }
-.menu li a{
-    color: white;
+.f-item{
+    background: linear-gradient(to bottom, #4eacda, #2e7ac4);
+    border: 1px solid #4eacda;
 }
-.menu .fm{
-    background-color: #07518f;
-    color: white;
+.s-m-item{
+    color: #60b5ed;
+    padding: 7px 20px 12px 20px;
+    float: right;
 }
-.menu li:hover{
-    background-color: #4eacda;
-    padding: 5px 20px 7px 20px;
-}
-/*Second menu*/
-.menu .sm{
-    padding-right: 20px;
+.b-g{
+    background-color: #4eabda;
+    color: #ffffff;
 }
