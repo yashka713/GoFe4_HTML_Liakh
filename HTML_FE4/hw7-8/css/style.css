@@ -15,7 +15,7 @@
 
 /*logo of the site & top menu*/
 .site-top {
-    background: url("../layer/bg.png") top center no-repeat;
+    background: url("../img/bg.jpg") top center no-repeat;
     height: 846px;
     width: 100%;
     position: relative;
@@ -83,7 +83,7 @@
 
 .slider__left-p {
     width: 508px;
-    margin: 356px 0 0 -2px;
+    margin: 358px 0 0 -2px;
     display: block;
 }
 
@@ -97,16 +97,18 @@
     color: #c09bce;
     font-size: 23pt;
     font-weight: normal;
+    margin: -3px 0 0 0;
+    display: inline-block;
 }
 
 .slider_article {
-    font-size: 16pt;
+    font-size: 13pt;
     color: white;
     margin: 4px 0 0 0;
-    letter-spacing: 1.9px;
-    line-height: 1.15;
+    line-height: 1.45;
     font-weight: normal;
     height: 150%;
+    font-family: 'Open Sans';
 }
 
 .slider__right-p {
@@ -121,8 +123,8 @@
 .slaider__iphone {
     width: 28.6%;
     position: absolute;
-    top: -95px;
-    left: 613px;
+    top: -97px;
+    left: 614px;
 }
 
 .slaider__ico-right {
@@ -131,7 +133,7 @@
     width: 100%;
     height: 100%;
     top: 101px;
-    left: 400px;
+    left: 1085px;
 }
 
 .slider__down-slider {
@@ -316,6 +318,7 @@
 .description__header {
     font-size: 17px;
     font-weight: bold;
+    margin: 1px 0 0 63px;
 }
 
 .description__text {
@@ -357,7 +360,7 @@
     width: 60px;
     height: 60px;
     float: left;
-    margin: -2px 0 0 3px;
+    margin: -2px 5px 0 3px;
 }
 
 .right-panel__description__link:nth-child(3) {
@@ -365,7 +368,7 @@
 }
 
 .description__text:nth-child(3) {
-    margin: 5px 0 0 69px;
+    margin: 6px 0 0 66px;
     font-size: 16px;
 }
 
@@ -375,10 +378,11 @@
     width: 60px;
     height: 60px;
     float: left;
+    margin: -3px 4px 0 3px;
 }
 
 .right-panel__description__link:nth-child(4) {
-    margin: 20px 0 24px 21px;
+    margin: 20px 0 22px 21px;
 }
 
 /*panel logo*/
@@ -517,7 +521,7 @@
 .signature {
     font-size: 13px;
     float: right;
-    margin: 53px 3px 0 0;
+    margin: 51px 2px 0 0;
     color: white;
     font-family: "Open Sans";
 }

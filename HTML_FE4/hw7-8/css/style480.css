@@ -259,13 +259,15 @@
         margin: 15px 2px 0 39px;
         width: 350px;
     }
-
+    .right-panel__cirkle-first{
+        margin: -3px 0 0 1px;
+    }
     .right-panel__description__link:nth-child(3) {
-        margin: 24px 0 0 31px;
+        margin: 23px 0 0 33px;
     }
 
     .right-panel__description__link:nth-child(4) {
-        margin: 20px 0 0 32px;
+        margin: 20px 0 0 35px;
     }
 
     .right-panel__link {
@@ -274,7 +276,7 @@
 
     .right-panel__link--768 {
         display: inline-block;
-        margin: 19px 0 0 191px;
+        margin: 17px 0 0 181px;
     }
 
     /*panel logo*/
@@ -312,7 +314,7 @@
     }
 
     .logo-brands:nth-child(6) {
-        margin: 23px 0 0 39px;
+        margin: 21px 0 0 39px;
         width: 25%;
     }
 
@@ -340,7 +342,7 @@
     }
 
     .bottom-article__left__text {
-        margin: 9px 0 0 -1px;
+        margin: 7px 0 0 -1px;
         height: 98px;
     }
 
@@ -368,14 +370,14 @@
     }
 
     .bottom-article__center-right__text {
-        margin: 6px 0 0 -1px;
+        margin: 7px 0 0 -1px;
         height: 98px;
     }
 
     /*right*/
     .bottom-article__right {
         width: 100%;
-        margin: 56px 0 0 20px;
+        margin: 56px 0 0 19px;
         float: none;
     }
     .bottom-article__right > .bottom-article__center-right__link{
@@ -411,7 +413,7 @@
     }
 
     .signature {
-        margin: 101px 0 0 -4px;
+        margin: 99px 0 0 -1px;
         float: none;
         text-align: center;
     }
