@@ -4,12 +4,13 @@
 "use strict"
 var arrName = [];
 for(var i=0; i < 5; i++){
-    arrName[i] = prompt("Enter the name " + (i+1) + " members");
+    arrName[i] = prompt("Введите имя " + (i+1) + " человека:");
 }
-var login = prompt("Enter the name of members");
+var login = prompt("Введите имя для поиска:", '');
+var successfulLogin='';
 for (i=0; i<arrName.length ; i++){
     if(login == arrName[i]){
-        var successfulLogin = arrName[i];
+        successfulLogin = arrName[i];
     }
 }
  if ((successfulLogin !== null)&& (successfulLogin !== '')){
@@ -17,5 +18,3 @@ for (i=0; i<arrName.length ; i++){
  }else{
      alert("ЭРОР404!");
  }
-
-

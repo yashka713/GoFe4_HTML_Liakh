@@ -1,64 +1,53 @@
 /**
  * Created by Ярик on 10.03.2016.
  */
-"use strict"
+"use strict";
+/*INPUT*/
+var m = +prompt("указанное число: ");
+var n = +prompt("указанная степень: ");
 
-var m = prompt("указанное число: ");
-var n = prompt("указанная степень: ");
+/*OUTPUT*/
+console.log(powMyV1(m,n));
+console.log(powMyV2(m,n));
+console.log(powMyV3(m,n));
 
 /*recursion*/
 function powMyV1(a ,b){
-    if (b < 0){
-        console.log("ERROR");
-    }
-    else if (b == 0) {
-        return 1;
-    }
-    else if (b == 1) {
-        return a;
-    }
-    else {
-        return a*powMy(a,b-1);
-    }
+    if (b==1) return a;
+    return a*powMyV1(a,b-1);
 }
 
 /*Exponential*/
 function powMyV2(a ,b){
+    var result =1;
     if (b < 0){
-        console.log("ERROR");
+        result = 0;
     }
     else if (b == 0) {
-        return 1;
-    }
-    else if (b == 1) {
-        return a;
+        result = 1;
     }
     else {
-        var result = Math.exp(a*(Math.log(b)));
-        return result;
+        result = Math.exp(b*(Math.log(a)));
     }
+    return result;
 }
 
 /*for (most simple)*/
 function powMyV3(a ,b){
     var result = 1;
     if (b < 0){
-        console.log("ERROR");
+        result = 0;
     }
     else if (b == 0) {
-        return 1;
+        result = 1;
     }
     else if (b == 1) {
-        return a;
+        result = a;
     }
     else {
         for (var i = 0; i < b; i++) {
-            var result = result*a;
+            result = result*a;
         }
-        return result;
     }
+    return result;
 }
-/*OUTPUT*/
-console.log(powMyV1(m,n));
-console.log(powMyV2(m,n));
-console.log(powMyV3(m,n));
