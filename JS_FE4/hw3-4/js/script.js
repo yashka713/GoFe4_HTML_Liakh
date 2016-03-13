@@ -39,6 +39,32 @@ var mainObj = {
         }
         qAndA.push(qa3);
         console.log(qAndA);
+        /*создание формы и заполнение ее*/
+        var form = document.createElement('form');
+        form.classList.add('form-qa');
+        var wrapper = document.querySelector('.wrapper');
+        wrapper.appendChild(form);
+        for (var i=0; i<qAndA.length; i++){
+            /* Создание <p> */
+            var pQuestion = document.createElement('p');
+            pQuestion.classList.add('p-questions');
+            form.appendChild(pQuestion);
+            /* Создание <label> в <p> */
+            var labelQuestion = document.createElement('label');
+            labelQuestion.classList.add('label-questions')
+            labelQuestion.innerHTML = (i+1) + ". " + qAndA[i].question;
+            form.appendChild(labelQuestion);
+            /* цикл на вывод ответов*/
+            for (var j=0; j<qAndA[i].answers.length; j++){
+                var labelAnswers = document.createElement('label');
+                labelAnswers.classList.add('label-answers');
+                labelQuestion.appendChild(labelAnswers);
+                labelQuestion.setAttribute('name', '')
+                /* создание и вывод Checkbox */
+                var inputCheckbox = document.createElement('input');
+
+            }
+        }
     }
 };
 mainObj.createWrapper();
