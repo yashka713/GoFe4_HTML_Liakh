@@ -52,17 +52,20 @@ var mainObj = {
             /* Создание <label> в <p> */
             var labelQuestion = document.createElement('label');
             labelQuestion.classList.add('label-questions')
-            labelQuestion.innerHTML = (i+1) + ". " + qAndA[i].question;
-            form.appendChild(labelQuestion);
+            var counter = i + 1;
+            labelQuestion.innerHTML = counter + ". " + qAndA[i].question;
+            pQuestion.appendChild(labelQuestion);
             /* цикл на вывод ответов*/
-            for (var j=0; j<qAndA[i].answers.length; j++){
+            for (var j=0; j<3 ; j++){
                 var labelAnswers = document.createElement('label');
                 labelAnswers.classList.add('label-answers');
-                labelQuestion.appendChild(labelAnswers);
-                labelQuestion.setAttribute('name', '')
-                /* создание и вывод Checkbox */
-                var inputCheckbox = document.createElement('input');
-
+                pQuestion.appendChild(labelAnswers);
+                /* создание и вывод Checkbox ВОТ ТУТ ПРОБЛЕМА! ВНИМАТЕЛЬНО ВСЕ ПРОВЕРИТЬ*/
+                //var inputCheckbox = document.createElement('input');
+                //inputCheckbox.classList.add('checkbox-answers');
+                //inputCheckbox.appendChild(labelAnswers);
+                //inputCheckbox.setAttribute('type', 'checkbox');
+                //inputCheckbox.innerHTML = qAndA[i].answers[j];
             }
         }
     }
