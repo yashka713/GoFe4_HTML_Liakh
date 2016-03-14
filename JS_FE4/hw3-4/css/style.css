@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: lightgray;
 }
 .wrapper{
     width: 768px;
@@ -7,6 +7,7 @@ body {
     background-color: white;
     border: 1px solid black;
     height: 500px;
+    position: relative;
 }
 .center-header{
     font-size: 18px;
@@ -22,6 +23,9 @@ body {
     font-size: 16px;
     margin-left: 70px;
 }
-.label-answers{
-    
+.p-answers{
+    margin: 5px 0 2px 87px;
+}
+input[type="checkbox"]{
+    background: powderblue;
 }

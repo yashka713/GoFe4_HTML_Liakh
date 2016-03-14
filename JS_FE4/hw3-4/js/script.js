@@ -17,8 +17,7 @@ var mainObj = {
     },
     questionsAndAnswers: function () {
         var qAndA = [];
-        /* Здесь будет происходить наполнение массива
-         *q AndA*/
+        /* Здесь будет происходить наполнение массива */
 
         /*вопрос-ответ №1*/
         var qa1 = {
@@ -72,6 +71,8 @@ var mainObj = {
                 /* создание и вывод Checkbox */
                 var checkboxAnswers = document.createElement("INPUT");
                 checkboxAnswers.setAttribute("type", "checkbox");
+                checkboxAnswers.classList.add('checkboxAnswers');
+                checkboxAnswers.style.backgroundColor = 'powderblue';
                 pAnswers.appendChild(checkboxAnswers);
 
                 /* создание и вывод label */
@@ -81,8 +82,30 @@ var mainObj = {
                 labelAnswers.innerHTML = qAndA[i].answers[j];
             }
         }
+    },
+    createButton: function () {
+        var button = document.createElement("INPUT");
+        button.setAttribute("type", "submit");
+        button.setAttribute('value', 'Проверить мои результаты');
+        button.classList.add('button');
+        var wrapper = document.querySelector('.wrapper');
+        wrapper.appendChild(button);
+
+        /*тестим вставку style для кнопки */
+        button.style.fontSize = '18px';
+        button.style.padding = '5px 15px';
+        button.style.marginTop = '50px';
+        button.style.marginLeft = '-120px';
+        button.style.left = '50%';
+        button.style.textAlign = 'center';
+        button.style.position = 'absolute';
+        button.style.backgroundColor = 'powderblue';
+    },
+    constructor: function () {
+        this.createWrapper();
+        this.createHeader();
+        this.questionsAndAnswers();
+        this.createButton();
     }
 };
-mainObj.createWrapper();
-mainObj.createHeader();
-mainObj.questionsAndAnswers();
+mainObj.constructor();
