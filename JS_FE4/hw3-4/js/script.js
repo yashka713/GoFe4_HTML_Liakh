@@ -55,7 +55,7 @@ var mainObj = {
 
             /* Создание <label> в <p> */
             var labelQuestion = document.createElement('label');
-            labelQuestion.classList.add('label-questions')
+            labelQuestion.classList.add('label-questions');
             var counter = i + 1;
             labelQuestion.innerHTML = counter + ". " + qAndA[i].question;
             pQuestion.appendChild(labelQuestion);
@@ -71,14 +71,15 @@ var mainObj = {
                 /* создание и вывод Checkbox */
                 var checkboxAnswers = document.createElement("INPUT");
                 checkboxAnswers.setAttribute("type", "checkbox");
+                checkboxAnswers.setAttribute("id",j);
                 checkboxAnswers.classList.add('checkboxAnswers');
-                checkboxAnswers.style.backgroundColor = 'powderblue';
                 pAnswers.appendChild(checkboxAnswers);
 
-                /* создание и вывод label */
                 var labelAnswers = document.createElement('label');
                 labelAnswers.classList.add('label-answers');
+                labelAnswers.setAttribute("for", "id="+j);
                 pAnswers.appendChild(labelAnswers);
+
                 labelAnswers.innerHTML = qAndA[i].answers[j];
             }
         }
