@@ -1,12 +1,12 @@
 /**
  * Created by Ярик on 09.03.2016.
  */
-"use strict"
+"use strict";
 var mainObj = {
     createWrapper: function () {
         var wrapper = document.createElement('div');
         wrapper.classList.add('wrapper');
-        document.body.appendChild(wrapper)
+        document.body.appendChild(wrapper);
     },
     createHeader: function () {
         var header = document.createElement('p');
@@ -23,23 +23,22 @@ var mainObj = {
         var qa1 = {
             question: 'Вопрос №1',
             answers: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3']
-        }
+        };
         qAndA.push(qa1);
 
         /*вопрос-ответ №2*/
         var qa2 = {
             question: 'Вопрос №2',
             answers: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3']
-        }
+        };
         qAndA.push(qa2);
 
         /*вопрос-ответ №3*/
         var qa3 = {
             question: 'Вопрос №3',
             answers: ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3']
-        }
+        };
         qAndA.push(qa3);
-        console.log(qAndA);
 
         /*создание формы и заполнение ее*/
         var form = document.createElement('form');
@@ -61,7 +60,7 @@ var mainObj = {
             pQuestion.appendChild(labelQuestion);
             /* цикл на вывод ответов*/
 
-            for (var j = 0; j < 3; j++) {
+            for (var j = 0; j < qAndA[i].answers.length; j++) {
 
                 /* создание p, в который вложены checkbox и label */
                 var pAnswers = document.createElement('p');
@@ -71,16 +70,15 @@ var mainObj = {
                 /* создание и вывод Checkbox */
                 var checkboxAnswers = document.createElement("INPUT");
                 checkboxAnswers.setAttribute("type", "checkbox");
-                checkboxAnswers.setAttribute("id",j);
-                checkboxAnswers.classList.add('checkboxAnswers');
-                pAnswers.appendChild(checkboxAnswers);
+                checkboxAnswers.setAttribute("id",(''+ i) + ('' + j));
 
                 var labelAnswers = document.createElement('label');
-                labelAnswers.classList.add('label-answers');
-                labelAnswers.setAttribute("for", "id="+j);
-                pAnswers.appendChild(labelAnswers);
+                labelAnswers.setAttribute('for', (''+ i) + ('' + j));
 
-                labelAnswers.innerHTML = qAndA[i].answers[j];
+                pAnswers.appendChild(labelAnswers);
+                labelAnswers.appendChild(checkboxAnswers);
+
+                labelAnswers.innerHTML += '' + qAndA[i].answers[j];
             }
         }
     },
