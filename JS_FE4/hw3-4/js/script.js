@@ -45,6 +45,7 @@ var mainObj = {
         form.classList.add('form-qa');
         var wrapper = document.querySelector('.wrapper');
         wrapper.appendChild(form);
+
         for (var i = 0; i < qAndA.length; i++) {
 
             /* Создание <p> */
