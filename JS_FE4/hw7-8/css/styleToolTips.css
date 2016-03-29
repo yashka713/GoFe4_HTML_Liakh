@@ -1,31 +1,10 @@
 /* Tooltip */
-body {
-    position: relative;
-}
-
-.wrapper {
-    background-color: #4f9bf8;
-    position: absolute;
-    width: 700px;
-    left: 50%;
-    margin-left: -350px;
-}
-
 .form_tooltip {
     background-color: #cecdcf;
     width: 580px;
     height: 200px;
-    margin: 50px 0 50px 60px;
-    font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
-    font-size: 62.5%;
+    font-size:12px;
     padding: 10px 0 20px 0;
-}
-
-fieldset {
-    border: 2px solid gray;
-    width: 450px;
-    margin: 0 50px;
-    padding: 10px 10px;
 }
 
 .firstname > label, .lastname > label, .address > label {
@@ -45,4 +24,12 @@ fieldset {
     margin: 0 50px;
 }
 
-/* Tabs */
+span {
+    display: inline-block;
+    width: 200px;
+    font-size: 12px;
+    padding: 3px 0 3px 3px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 2px rgba(134, 135, 133, 1);
+    margin-left: 5px;
+}
