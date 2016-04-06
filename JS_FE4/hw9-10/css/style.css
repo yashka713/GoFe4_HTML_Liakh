@@ -1,0 +1,175 @@
+/*MENU*/
+.wrapper-menu-one{
+text-align: center;
+}
+nav {
+    background-color:rgb(250, 88, 130);
+    padding:10px 0;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {
+    background-color:rgb(254, 46, 100);
+    position:absolute;
+    left:0;
+    top:40px;
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px;
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+ul.sub-menu {
+    display:none;
+}
+
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+body {
+    background-color: #cad3d0;
+}
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper-carousel {
+    width: 85%;
+    margin: 20px auto;
+    border: 3px solid wheat;
+}
+
+.wrapper-select {
+    margin: 23px 100px;
+}
+
+/*checkbox css*/
+.wrapper-checkbox {
+    width: 500px;
+    margin: 50px auto;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label {
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+label:before {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../plugin/checkbox/checkbox-sprite.png);
+    position: relative;
+    top: 3px;
+    margin-left: 22px;
+    margin-right: 5px;
+}
+
+input[type=checkbox]:checked + label:before {
+    background-position: 0 -17px;
+}
+
+label:hover:after {
+    background-position: 0 -34px;
+}
+
+input[type=checkbox]:checked + label:hover:before {
+    background-position: 0 -51px;
+}
+
+/*checkbox jquery*/
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../plugin/checkbox/checkbox-sprite.png);
+    margin-left: 32px;
+}
+
+.niceCheck > input {
+    display: none;
+}
+
+.checkbox-div{
+    margin: 20px auto;
+}
+
+.likeLabel{
+    display: inline-block;
+    margin-left: 22px;
+    width: 170px;
+}
+
+.checkbox-block{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 32px;
+    background: url(../plugin/checkbox/checkbox-sprite.png);
+    background-position: 0 -17px;
+}
