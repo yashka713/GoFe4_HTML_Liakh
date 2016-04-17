@@ -1,7 +1,7 @@
 'use strict'
 $(document).ready(function () {
 
-    //$('carousel-hider').myCarousel()
+    $('.carousel-list').myCarousell();
 
     var header = $('#base-template').html();
     var template = tmpl(header, base);
