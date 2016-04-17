@@ -1,11 +1,10 @@
 'use strict'
 $(document).ready(function () {
 
-    ////$('carousel-hider').myCarousel();
-    //var tmpl = _.template($('base-template').html());
-    //
-    //// ..а вот и результат
-    //var result = tmpl(base);
-    //$("body").append( result );
-    //console.log('123')
+    //$('carousel-hider').myCarousel()
+
+    var header = $('#base-template').html();
+    var template = tmpl(header, base);
+    $('.wrapper').append(template);
+
 });

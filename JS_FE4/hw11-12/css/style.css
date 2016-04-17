@@ -3,7 +3,7 @@ body{
 }
 .wrapper {
     width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
     background-color: lightskyblue;
 }
 
@@ -35,6 +35,35 @@ body{
     display: inline-block;
     float: left;
 }
-/*LoDash*/
+/*template*/
 
+.header-info, .residence{
+    text-align: center;
+    font-size: 25px;
+}
 
+.img-form{
+    margin: 10px auto;
+    display: block;
+}
+
+.header-name{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reason{
+    list-style: none;
+    font-size: 17px;
+    margin: 5px 20px;
+    display: inline-block;
+}
+
+.vk, .facebook{
+    width: 100px;
+}
+
+.education{
+    margin-left: 20px;
+}

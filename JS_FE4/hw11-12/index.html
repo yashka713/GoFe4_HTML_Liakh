@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <!--<script src="js/jquery.Carousel.js"></script>-->
-    <script src="js/lodash.js"></script>
+
     <script src="js/base.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/tmpl.js"></script>
+
     <title>Plugin&Template</title>
     <link rel="shortcut icon" href="icon.gif">
 </head>
 <body>
     <div class="wrapper">
         <script type="text/template" id="base-template">
-            <h3 class='firstLastName'><%-title%></h3>
+            <% for(var i=0; i < base.student.length; i++){%>
+            <p class="header-name"><%= base.student[i].name %></p>
+            <p class="residence"><%= base.student[i].residence %></p>
+            <img src="<%= base.student[i].photo %>" alt="123" class="img-form">
+            <p class="reason">Почему именно it:</p>
+            <% for(var j=0; j < base.student[i].whyLearning.length; j++){%>
+            <ul>
+                <li class="reason">
+                    <%=  base.student[i].whyLearning[j]%>
+                </li>
+            </ul>
+            <% };%>
+            <p class="reason"> Ссылки:</p>
+            <a href="https://<%= base.student[i].vk %>" target="blank">
+                <img src="img/vk.png" alt="123" class="vk">
+            </a>
+            <a href="https://<%= base.student[i].facebook %>" target="blank">
+                <img src="img/facebook.png" alt="123" class="facebook">
+            </a>
+            <p class="education"><%= base.student[i].education %></p>
+            <% };%>
         </script>
     </div>
 
