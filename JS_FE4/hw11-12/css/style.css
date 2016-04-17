@@ -1,0 +1,40 @@
+body{
+    background-color: whitesmoke;
+}
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background-color: lightskyblue;
+}
+
+.carousel-hider {
+    width: 500px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    position: relative;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+    left: 0;
+}
+
+.carousel-element img {
+    max-width: 100px;
+}
+
+.arrow-left, .arrow-right{
+    width: 50px;
+    display: inline-block;
+    float: left;
+}
+/*LoDash*/
+
+
