@@ -43,11 +43,13 @@ $(document).ready(function () {
         localStorage.setItem(userNickName ,temp);
         $('input[type="checkbox"]').prop("checked", false);
 
+        $('body').append($appendModal);
+
         if((kinestetik > audial)&&(kinestetik > visual)&&(kinestetik > discrete)) res = description.kinestetik;
         else if((audial > visual)&&(audial > discrete)) res = description.audial;
         else if(visual > discrete) res = description.visual;
         else res = description.discrete;
-        $('body').append($appendModal);
+
         $('.modal-window').append('<p class="paragraph">' + res + '</p>');
 
 
