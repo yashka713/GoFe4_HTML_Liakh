@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tmpl.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <title>Plugin&Template</title>
+    <link rel="shortcut icon" href="icon.gif">
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="img/logo.png" alt="logo" class="wrapper-img">
+        <input type="text" class="wrapper-text" placeholder="Введите Ваш запрос">
+        <input type="submit" class="wrapper-submit" value="Отправить запрос">
+
+
+    </div>
+    <div class="wrapper-answer">
+        <script type="text/template" id="base-template">
+            <p class="header-text"><%='Ответы по запросу:' + value %></p>
+            <div class="answer-block">
+                <% for (var it=0; it < obj.length; it++){ %>
+                <p class="answer-item-">Вывод тестовый</p>
+                <%}%>
+            </div>
+        </script>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
