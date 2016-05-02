@@ -20,10 +20,13 @@
     </div>
     <div class="wrapper-answer">
         <script type="text/template" id="base-template">
-            <p class="header-text"><%='Ответы по запросу:' + value %></p>
-            <div class="answer-block">
-                <% for (var it=0; it < obj.length; it++){ %>
-                <p class="answer-item-">Вывод тестовый</p>
+            <div class="answers">
+                <% for (var i=0; i < obj.length; i++){ %>
+                <div class="answer-block">
+                    <a href="'<%=obj[i].url %>'" class="answer-title"><%=obj[i].titleNoFormatting %></a>
+                    <p class="answer-url"><%=obj[i].url %></p>
+                    <p class="answer-content"><%=obj[i].content %></p>
+                </div>
                 <%}%>
             </div>
         </script>

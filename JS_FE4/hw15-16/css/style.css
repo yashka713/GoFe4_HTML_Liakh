@@ -1,41 +1,66 @@
-body{
+body {
     background-color: whitesmoke;
 }
 
-.wrapper{
+.wrapper {
     width: 500px;
     margin: 0 auto;
     padding: 5px;
 }
 
-.wrapper-img{
+.wrapper-img {
     width: 500px;
     height: 150px;
 }
 
-.wrapper-text{
+.wrapper-text {
     display: inline-block;
     margin: 10px auto;
     width: 500px;
 }
 
-.wrapper-submit{
+.wrapper-submit {
     display: block;
     margin: 10px auto;
     width: 130px;
     padding: 3px;
 }
 
-.wrapper-answer{
+.wrapper-answer {
     margin: 0 50px 0 50px;
     padding: 13px;
+    font-family: arial,sans-serif;
 }
-.answer-block{
+
+.answers {
     margin: 25px 0 0 0;
     background-color: white;
     padding: 10px;
 }
-.answer-item{
+
+.answer-item {
     margin: 10px 0 0 15px;
     padding: 5px;
+}
+
+.answer-title {
+    color: #1a0dab;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.answer-url{
+    font-size: 14px;
+    color: #006621;
+}
+
+.answer-content {
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: #545454;
+}
+
+.answer-block{
+    margin: 5px 5px;
+    padding: 3px;
 }
