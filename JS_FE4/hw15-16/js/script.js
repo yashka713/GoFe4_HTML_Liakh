@@ -15,11 +15,11 @@ function GoogleCallback(jqueryObj, data) {
 $(document).ready(function () {
 
     function Sender() {
-        console.log('123');
         $('.answers').remove();
         value = $('.wrapper-text').val();
         $.ajax({
-            url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg' +
+            url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=' +
+            'ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg' +
             '&rsz=large' + '&q=' + value + '&callback=GoogleCallback&context=?',
             dataType: 'jsonp'
         });
