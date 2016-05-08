@@ -43,6 +43,15 @@ module.exports = function(grunt) {
                     'build/css/output.css': ['src/css/reset.css', 'src/css/style.css']
                 }]
             }
+        },
+        watch: {
+            scripts: {
+                files: ['js/*.js', 'src/css/*.css'],
+                tasks: ['concat', 'uglify', 'cssmin'],
+                options: {
+                    spawn: false,
+                },
+            }
         }
 
     });
@@ -52,8 +61,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'cssmin']);
-
+    grunt.registerTask('user', 'watch');
 };
