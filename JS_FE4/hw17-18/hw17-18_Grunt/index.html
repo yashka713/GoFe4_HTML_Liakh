@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="build/css/output.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="src/js/base.js"></script>
+    <title>Plugin&Template</title>
+    <link rel="shortcut icon" href="icon.gif">
+</head>
+<body>
+<div class="carousel-wrapper">
+    <div class="carousel-list">
+        <div class="myCarousel_button--left">
+            <img src="build/img/chevron-left.png" alt="non">
+        </div>
+        <ul>
+            <li class="carousel-item">
+                <img src="build/img/960-350/img1.jpg" alt="Non">
+            </li>
+            <li class="carousel-item">
+                <img src="build/img/960-350/img2.jpg" alt="Non">
+            </li>
+            <li class="carousel-item">
+                <img src="src/img/960-350/img3.jpeg" alt="Non">
+            </li>
+            <li class="carousel-item">
+                <img src="build/img/960-350/img4.jpg" alt="Non">
+            </li>
+            <li class="carousel-item">
+                <img src="build/img/960-350/img5.jpg" alt="Non">
+            </li>
+        </ul>
+        <div class="myCarousel_button--right">
+            <img src="build/img/chevron-right.png" alt="non">
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <script type="text/template" id="base-template">
+    <% for(var i=0; i < base.student.length; i++){%>
+    <p class="header-name"><%= base.student[i].name %></p>
+    <p class="residence"><%= base.student[i].residence %></p>
+    <img src="<%= base.student[i].photo %>" alt="123" class="img-form">
+    <p class="reason">Почему именно it:</p>
+    <% for(var j=0; j < base.student[i].whyLearning.length; j++){%>
+    <ul>
+    <li class="reason">
+    <%=  base.student[i].whyLearning[j]%>
+    </li>
+    </ul>
+    <% };%>
+    <p class="reason"> Ссылки:</p>
+    <a href="https://<%= base.student[i].vk %>" target="blank">
+    <img src="src/img/vk.png" alt="123" class="vk">
+    </a>
+    <a href="https://<%= base.student[i].facebook %>" target="blank">
+    <img src="src/img/facebook.png" alt="123" class="facebook">
+    </a>
+    <p class="education"><%= base.student[i].education %></p>
+    <% };%>
+    </script>
+    <script src="build/js/production.js"></script>
+</div>
+</body>
+</html>

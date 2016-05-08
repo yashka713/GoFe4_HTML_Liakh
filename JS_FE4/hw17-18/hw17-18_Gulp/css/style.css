@@ -1,0 +1,84 @@
+body{
+    background-color: whitesmoke;
+}
+.wrapper {
+    width: 800px;
+    margin: 50px auto;
+    background-color: lightskyblue;
+}
+/**/
+.carousel-list{
+    width: 450px;
+    height: 300px;
+    border: 1px transparent solid;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    transition: 2s;
+    left: -450px;
+}
+
+.myCarousel_button--left > img, .myCarousel_button--right> img{
+    width: 100px;
+
+}
+
+.myCarousel_button--left, .myCarousel_button--right{
+    display: inline-block;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+}
+.myCarousel_button--left:hover, .myCarousel_button--right:hover{
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.myCarousel_button--left{
+left: 0;
+}
+
+.myCarousel_button--right{
+left: 350px;
+}
+
+/*template*/
+
+.header-info, .residence{
+    text-align: center;
+    font-size: 25px;
+}
+
+.img-form{
+    margin: 10px auto;
+    display: block;
+}
+
+.header-name{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reason{
+    list-style: none;
+    font-size: 17px;
+    margin: 5px 20px;
+    display: inline-block;
+}
+
+.vk, .facebook{
+    width: 100px;
+}
+
+.education{
+    margin-left: 20px;
+}
