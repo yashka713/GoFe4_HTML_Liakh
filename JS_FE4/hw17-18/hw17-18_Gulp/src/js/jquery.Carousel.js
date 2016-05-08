@@ -5,10 +5,8 @@
 
         $.fn.myCarousell = function() {
                 var $item = $('.carousel-item');
-                console.log($item);
                 var currItem = 0;
                 var itemWidth = parseInt($item.css('width'));
-                console.log(itemWidth);
 
                 for (var i = 0; i < $item.length; i++)
                     $item.eq(i).css('left', i * itemWidth + 'px');

@@ -6,7 +6,7 @@
 var base = {
     student : [{
         name: 'Liakh Yaroslav',
-        photo: 'img/i.jpg',
+        photo: 'build/img/i.jpg',
         mobile: '+380506456220',
         residence: 'Kharkiv, Ukraine ',
         company: 'UpSale',
@@ -19,7 +19,7 @@ var base = {
     },
     {
         name: 'Liakh Yaroslav',
-        photo: 'img/i.jpg',
+        photo: 'build/img/i.jpg',
         mobisle: '+380506456220',
         residence: 'Kharkiv, Ukraine',
         company: 'UpSale',
