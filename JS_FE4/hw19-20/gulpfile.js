@@ -13,6 +13,10 @@ gulp.task('minify', function(){
 
 
 // Конкатенация и минификация файлов
+//    gulp.src(['src/js/data.js'])
+//        .pipe(concat('data.js'))
+//        .pipe(uglify())
+//        .pipe(gulp.dest('src/js/'));
 //gulp.src(['src/js/script.js'])
 //    .pipe(concat('production.js'))
 //    .pipe(uglify())
