@@ -7,7 +7,7 @@ var JSONvalue = [{guid:"701b29c3-b35d-4cf1-a5f6-8b12b29a5081",index:0,favoriteFr
   for (var i=0; i < JSONvalue.length; i++){
     arrSkills = _.orderBy( _.uniq(_.concat(arrSkills, JSONvalue[i].skills), [],['asc']));
 };
-  //console.log(arrSkills);
+  console.log(arrSkills);
 
 //2
 
@@ -36,5 +36,9 @@ var objPick = [];
   console.log(objPick);
 
   //3
-  
+  var arrFriends = [];
+  for (var i=0; i < JSONvalue.length; i++){
+    var arrFriends = _.orderBy( _.uniq(_.concat(arrFriends, _.map(JSONvalue[i].friends, 'name')), [],['asc']));
+  };
+  console.log(arrFriends);
 });
