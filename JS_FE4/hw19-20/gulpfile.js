@@ -13,25 +13,24 @@ gulp.task('minify', function(){
 
 
 // Конкатенация и минификация файлов
-//    gulp.src(['src/js/data.js'])
-//        .pipe(concat('data.js'))
-//        .pipe(uglify())
-//        .pipe(gulp.dest('src/js/'));
-//gulp.src(['src/js/script.js'])
-//    .pipe(concat('production.js'))
-//    .pipe(uglify())
-//    .pipe(gulp.dest('build/js/'));
+gulp.src(['src/js/script.js'])
+    .pipe(concat('production.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js/'));
+
 //gulp.src('src/img/**/*')
 //    .pipe(imagemin())
-//    .pipe(gulp.dest('build/img/'))
+//    .pipe(gulp.dest('build/img/'));
+
 gulp.src('src/css/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('build/css/'));
-//gulp.src('src/**/*.css')
-//    .pipe(concatCss("css/production.css"))
-//    .pipe(cssmin())
-//    .pipe(rename({suffix: '.min'}))
-//    .pipe(gulp.dest('build/'));
+
+gulp.src('src/**/*.css')
+    .pipe(concatCss("css/production.css"))
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('build/'));
 });
 
 // Действия по умолчанию
