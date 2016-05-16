@@ -1,0 +1,70 @@
+@mixin moveNumber($mL) {
+  margin-left: $mL;
+}
+
+@mixin changeArticle($fs, $mt, $mr, $mb, $ml) {
+  display: inline-block;
+  font-size: $fs;
+  margin: $mt $mr $mb $ml;
+}
+
+.top-content {
+  margin: 57px 104px;
+  .panel {
+    width: 375px;
+    float: left;
+    .number {
+      font-size: 88px;
+      color: #e9e9ea;
+      float: left
+    }
+    .article-params {
+      margin: 11px 10px 10px 39px;
+    }
+    .article {
+      width: 280px;
+      height: 150px;
+      overflow: hidden;
+    }
+  }
+}
+
+.left-panel, .center-panel {
+  .title-article {
+    @include changeArticle(22px, 3px, 10px, 10px, 40px);
+  }
+
+  .text-article {
+    @include changeArticle(15px, 7px, 10px, 10px, 36px);
+    line-height: 20px;
+    color: #cfcfcf;
+  }
+
+  .link-article {
+    @include changeArticle(16px, 7px, 10px, 10px, 36px);
+    text-decoration: none;
+  }
+}
+
+.center-panel {
+  @include moveNumber(27px);
+}
+
+.right-panel {
+  .title-article {
+    @include changeArticle(22px, 5px, 10px, 13px, 47px);
+  }
+
+  .text-article {
+    @include changeArticle(15px, 7px, 10px, 10px, 45px);
+    line-height: 20px;
+    color: #cfcfcf;
+  }
+
+  .link-article {
+    @include changeArticle(16px, 8px, 10px, 10px, 44px);
+    text-decoration: none;
+  }
+
+    @include moveNumber(18px);
+  }

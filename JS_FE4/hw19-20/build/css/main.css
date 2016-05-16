@@ -1,1 +1,270 @@
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header,menu, nav, output, ruby, section, summary,time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font-family: 'Ubuntu Condensed',Verdana,Arial,sans-serif;  vertical-align: baseline; }/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure,footer, header, menu, nav, section {  display: block; }body {  line-height: 1; }ol, ul {  list-style: none; }blockquote, q {  quotes: none; }blockquote:before, blockquote:after,q:before, q:after {  content: '';  content: none; }table {  border-collapse: collapse;  border-spacing: 0;  font-size: 12px; }.wrapper {  width: 1170px;  margin: 0 auto; }.mainLogo {  margin: 35px 0 0 12px;  width: 20%;  float: left; }  .mainLogo .mainLogo-brand {    margin-left: 8px; }.sprites {  float: right;  width: 250px; }  .sprites .facebook {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 0;    background: url("../img/homework19_20-assets/sprite.png") 0 0; }  .sprites .twitter {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -25px 0; }  .sprites .rss {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -60px 0; }  .sprites .linkedIn {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -90px 0; }  .sprites .skype {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -120px 0;    margin: 48px 3px 0 5px; }  .sprites .facebook:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 0;    background: url("../img/homework19_20-assets/sprite.png") 0 17px; }  .sprites .twitter:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -25px 17px; }  .sprites .rss:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -60px 17px; }  .sprites .linkedIn:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -90px 17px; }  .sprites .skype:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -120px 17px;    margin: 47px 5px 0 6px; }.logo-sprites {  overflow: hidden; }.header-menu {  display: block;  clear: both;  margin: 36px 0 0 7px;  background-color: #2a2d32; }  .header-menu .header-menu-list {    display: inline-block;    width: 70%; }    .header-menu .header-menu-list .header-menu--item {      overflow: hidden;      display: inline-block;      padding: 20px 40px 18px 39px;      border-right: 1px solid black;      border-bottom: none; }      .header-menu .header-menu-list .header-menu--item .header-menu-_link {        color: white;        font-size: 16px;        text-decoration: none; }      .header-menu .header-menu-list .header-menu--item .header-menu-_link:hover {        color: #f9c73b; }    .header-menu .header-menu-list .mainItem {      background-color: #248cec; }.menu-search {  display: inline-block;  float: right;  position: relative;  margin: 8px 11px 10px 11px; }  .menu-search input[type="text"] {    background-color: #525457;    width: 237px;    height: 33px;    border: 1px solid black;    color: white;    padding-left: 2px; }  .menu-search input[type="button"] {    background: url("../img/homework19_20-assets/search.png");    width: 14px;    height: 13px;    top: 10px;    left: 214px;    border: none;    position: absolute;    cursor: pointer; }.carousel-block .carousel {  width: 1162px;  height: 472px;  margin: 39px 0 0 8px;  position: relative; }.carousel-block .jcarousel {  position: relative;  overflow: hidden; }.carousel-block .jcarousel ul {  width: 20000em;  position: relative; }.carousel-block .jcarousel li {  float: left; }.carousel-block .jcarousel-prev {  position: absolute;  display: inline-block;  width: 15px;  height: 15px;  top: 655px;  left: 656px;  padding: 1px;  background-color: black; }.carousel-block .jcarousel-next {  position: absolute;  display: inline-block;  width: 15px;  height: 15px;  top: 655px;  left: 683px;  padding: 1px;  background-color: black; }.top-content {  margin: 57px 104px; }  .top-content .panel {    width: 380px;    float: left;    margin-right: 10px; }    .top-content .panel .number {      font-size: 88px;      color: #e9e9ea;      float: left; }    .top-content .panel .article-params {      margin: 11px 10px 10px 39px; }    .top-content .panel .article {      width: 275px;      height: 150px;      border: 1px solid black;      overflow: hidden; }      .top-content .panel .article .title-article {        display: inline-block;        font-size: 22px;        margin: 3px 10px 10px 40px; }      .top-content .panel .article .text-article {        display: inline-block;        font-size: 15px;        margin: 7px 10px 10px 36px;        line-height: 20px;        color: #cfcfcf; }      .top-content .panel .article .link-article {        display: inline-block;        font-size: 16px;        margin: 7px 10px 10px 36px;        text-decoration: none; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Ubuntu Condensed',Verdana,Arial,sans-serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto; }
+
+.mainLogo {
+  margin: 35px 0 0 12px;
+  width: 20%;
+  float: left; }
+  .mainLogo .mainLogo-brand {
+    margin-left: 8px; }
+
+.sprites {
+  float: right;
+  width: 250px; }
+  .sprites .facebook {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 0;
+    background: url("../img/homework19_20-assets/sprite.png") 0 0; }
+  .sprites .twitter {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -25px 0; }
+  .sprites .rss {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -60px 0; }
+  .sprites .linkedIn {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -90px 0; }
+  .sprites .skype {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -120px 0;
+    margin: 48px 3px 0 5px; }
+  .sprites .facebook:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 0;
+    background: url("../img/homework19_20-assets/sprite.png") 0 17px; }
+  .sprites .twitter:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -25px 17px; }
+  .sprites .rss:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -60px 17px; }
+  .sprites .linkedIn:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -90px 17px; }
+  .sprites .skype:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -120px 17px;
+    margin: 47px 5px 0 6px; }
+
+.logo-sprites {
+  overflow: hidden; }
+
+.header-menu {
+  display: block;
+  clear: both;
+  margin: 36px 0 0 7px;
+  background-color: #2a2d32; }
+  .header-menu .header-menu-list {
+    display: inline-block;
+    width: 70%; }
+    .header-menu .header-menu-list .header-menu--item {
+      overflow: hidden;
+      display: inline-block;
+      padding: 20px 40px 18px 39px;
+      border-right: 1px solid black;
+      border-bottom: none; }
+      .header-menu .header-menu-list .header-menu--item .header-menu-_link {
+        color: white;
+        font-size: 16px;
+        text-decoration: none; }
+      .header-menu .header-menu-list .header-menu--item .header-menu-_link:hover {
+        color: #f9c73b; }
+    .header-menu .header-menu-list .mainItem {
+      background-color: #248cec; }
+
+.menu-search {
+  display: inline-block;
+  float: right;
+  position: relative;
+  margin: 8px 11px 10px 11px; }
+  .menu-search input[type="text"] {
+    background-color: #525457;
+    width: 237px;
+    height: 33px;
+    border: 1px solid black;
+    color: white;
+    padding-left: 2px; }
+  .menu-search input[type="button"] {
+    background: url("../img/homework19_20-assets/search.png");
+    width: 14px;
+    height: 13px;
+    top: 10px;
+    left: 214px;
+    border: none;
+    position: absolute;
+    cursor: pointer; }
+
+.carousel-block .carousel {
+  width: 1162px;
+  height: 472px;
+  margin: 39px 0 0 8px;
+  position: relative; }
+
+.carousel-block .jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.carousel-block .jcarousel ul {
+  width: 20000em;
+  position: relative; }
+
+.carousel-block .jcarousel li {
+  float: left; }
+
+.carousel-block .jcarousel-prev {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  top: 655px;
+  left: 656px;
+  padding: 1px;
+  background-color: black; }
+
+.carousel-block .jcarousel-next {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  top: 655px;
+  left: 683px;
+  padding: 1px;
+  background-color: black; }
+
+.top-content {
+  margin: 57px 104px; }
+  .top-content .panel {
+    width: 375px;
+    float: left; }
+    .top-content .panel .number {
+      font-size: 88px;
+      color: #e9e9ea;
+      float: left; }
+    .top-content .panel .article-params {
+      margin: 11px 10px 10px 39px; }
+    .top-content .panel .article {
+      width: 280px;
+      height: 150px;
+      overflow: hidden; }
+
+.left-panel .title-article, .center-panel .title-article {
+  display: inline-block;
+  font-size: 22px;
+  margin: 3px 10px 10px 40px; }
+
+.left-panel .text-article, .center-panel .text-article {
+  display: inline-block;
+  font-size: 15px;
+  margin: 7px 10px 10px 36px;
+  line-height: 20px;
+  color: #cfcfcf; }
+
+.left-panel .link-article, .center-panel .link-article {
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px 10px 10px 36px;
+  text-decoration: none; }
+
+.center-panel {
+  margin-left: 27px; }
+
+.right-panel {
+  margin-left: 18px; }
+  .right-panel .title-article {
+    display: inline-block;
+    font-size: 22px;
+    margin: 5px 10px 13px 47px; }
+  .right-panel .text-article {
+    display: inline-block;
+    font-size: 15px;
+    margin: 7px 10px 10px 45px;
+    line-height: 20px;
+    color: #cfcfcf; }
+  .right-panel .link-article {
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 10px 10px 44px;
+    text-decoration: none; }
