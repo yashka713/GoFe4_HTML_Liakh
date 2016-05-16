@@ -1,0 +1,64 @@
+
+.center-content {
+  clear: both;
+  overflow: hidden;
+  margin: 71px 0 0 0;
+  background-color: #2a2d32;
+  width: 100%;
+  height: 500px;
+  .center-content--title {
+    display: block;
+    margin: 44px 0 0 101px;
+    font-size: 27px;
+    color: white;
+  }
+  .center-content-block {
+    width: 280px;
+    display: inline-block;
+
+    .center-content--image {
+      width: 260px;
+      height: 260px;
+    }
+    .center-content--link {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+}
+
+.Schedule {
+  margin: 51px 0 0 99px;
+  .center-content--link {
+    margin: 29px 0 0 52px;
+  }
+}
+
+.Preventive {
+  margin: 51px 0 0 15px;
+  .center-content--link {
+    margin: 29px 0 0 47px;
+  }
+}
+
+.Tire {
+  margin: 51px 0 0 16px;
+  .center-content--link {
+    margin: 29px 0 0 52px;
+  }
+}
+.Repair{
+  margin: 51px 0 0 18px;
+  .center-content--link {
+    margin: 29px 0 0 74px;
+  }
+}
+
+.center-content-block:hover{
+  cursor: pointer;
+  .center-content--link {
+    color: #f0d330;
+  }
+}

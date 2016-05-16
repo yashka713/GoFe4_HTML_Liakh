@@ -12,4 +12,6 @@ $(function() {
             $('.jcarousel').jcarousel('scroll', '+=1');
         });
     });
+
+    $('.center-content-block').
 });
