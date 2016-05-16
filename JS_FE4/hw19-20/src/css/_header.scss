@@ -17,6 +17,17 @@ $menuColor: #2a2d32;
   background: url("../img/homework19_20-assets/sprite.png") $spriteX $spriteY;
 }
 
+@mixin button-carousel($top, $left) {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  top: $top;
+  left: $left;
+  padding: 1px;
+  background-color: black;
+}
+
 .wrapper {
   @include wrapper(1170px, 0);
 }
@@ -64,7 +75,7 @@ $menuColor: #2a2d32;
   }
   .skype:hover {
     @include sprites(-120px, 17px, 5px);
-    margin: 48px -7px 0 5px;
+    margin: 47px 5px 0 6px;
   }
 }
 
@@ -75,7 +86,7 @@ $menuColor: #2a2d32;
 .header-menu {
   display: block;
   clear: both;
-  margin: 36px 0 0 10px;
+  margin: 36px 0 0 7px;
   background-color: $menuColor;
   .header-menu-list {
     display: inline-block;
@@ -83,7 +94,7 @@ $menuColor: #2a2d32;
     .header-menu--item {
       overflow: hidden;
       display: inline-block;
-      padding: 16px 40px 18px 39px;
+      padding: 20px 40px 18px 39px;
       border-right: 1px solid black;
       border-bottom: none;
       .header-menu-_link {
@@ -105,15 +116,16 @@ $menuColor: #2a2d32;
   display: inline-block;
   float: right;
   position: relative;
-  margin: 10px 10px 10px 10px;
+  margin: 8px 11px 10px 11px;
   input[type="text"] {
     background-color: #525457;
     width: 237px;
     height: 33px;
     border: 1px solid black;
     color: white;
+    padding-left: 2px;
   }
-  input[type="button"]{
+  input[type="button"] {
     background: url("../img/homework19_20-assets/search.png");
     width: 14px;
     height: 13px;
@@ -124,8 +136,32 @@ $menuColor: #2a2d32;
     cursor: pointer;
   }
 }
-.carousel{
-  width: 1162px;
-  height: 472px;
-  margin: 38px 0 10px 9px;
+
+.carousel-block {
+  .carousel {
+    width: 1162px;
+    height: 472px;
+    margin: 39px 0 0 8px;
+    position: relative;
+  }
+
+  .jcarousel {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
+  }
+
+  .jcarousel li {
+    float: left;
+  }
+  .jcarousel-prev {
+    @include button-carousel(655px, 656px);
+  }
+  .jcarousel-next {
+    @include button-carousel(655px, 683px);
+  }
 }

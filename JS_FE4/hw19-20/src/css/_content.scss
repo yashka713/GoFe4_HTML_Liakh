@@ -1,0 +1,44 @@
+@mixin moveNumber($mL) {
+  margin-left: $mL;
+}
+@mixin changeArticle ($fs, $mt, $mr, $mb, $ml) {
+  display: inline-block;
+  font-size: $fs;
+  margin: $mt $mr $mb $ml;
+}
+
+.top-content {
+  margin: 57px 104px;
+  .panel {
+    width: 380px;
+    float: left;
+    margin-right: 10px;
+    .number {
+      font-size: 88px;
+      color: #e9e9ea;
+      float: left
+    }
+    .article-params {
+      margin: 11px 10px 10px 39px;
+    }
+    .article {
+      width: 275px;
+      height: 150px;
+      border: 1px solid black;
+      overflow: hidden;
+
+      .title-article {
+        @include changeArticle(22px,3px, 10px, 10px, 40px);
+      }
+      .text-article{
+        @include changeArticle(15px,7px, 10px, 10px, 36px);
+        line-height: 20px;
+        color: #cfcfcf;
+      }
+      .link-article{
+        @include changeArticle(16px,7px, 10px, 10px, 36px);
+        text-decoration: none;
+      }
+    }
+  }
+}
