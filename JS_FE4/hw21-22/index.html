@@ -14,33 +14,33 @@
     <link rel="shortcut icon" href="icon.gif">
 </head>
 <body>
-    <div class="wrapper">
-        <script type="text/template" id="base-template">
-            <p class="header-test"><%-database.title %></p>
-            <% for (var itq =0; itq < database.questions.length; itq++){ %>
-            <div class="question-block">
-                <p class="question-block--item"><%-database.questions[itq].question %></p>
-                <ol>
-                    <% for (var ita = 0; ita < database.questions[itq].answer.length; ita++){%>
-                    <li class="answer-block">
-                        <input type="checkbox" id="<%-'chkBx_' + itq + '_' + ita %>">
-                        <label for="<%-'chkBx_' + itq + '_' + ita %>">
-                            <%-database.questions[itq].answer[ita].textAnswer%>
-                        </label>
-                    </li>
-                    <% }%>
-                </ol>
-            </div>
-            <% }%>
-            <div class="user-name-block">
-                <span class="user-name-text">User name:</span>
-                <input type="text" class="user-name-input">
-            </div>
-            <input type="button" class="button-checked" value="Проверить тест!">
-        </script>
-    </div>
+<div class="wrapper">
+    <script type="text/template" id="base-template">
+        <p class="header-test"><%-database.title %></p>
+        <% for (var itq =0; itq < database.questions.length; itq++){ %>
+        <div class="question-block">
+            <p class="question-block--item"><%-database.questions[itq].question %></p>
+            <ol>
+                <% for (var ita = 0; ita < database.questions[itq].answer.length; ita++){%>
+                <li class="answer-block">
+                    <input type="checkbox" id="<%-'chkBx_' + itq + '_' + ita %>">
+                    <label for="<%-'chkBx_' + itq + '_' + ita %>">
+                        <%-database.questions[itq].answer[ita].textAnswer%>
+                    </label>
+                </li>
+                <% }%>
+            </ol>
+        </div>
+        <% }%>
+        <div class="user-name-block">
+            <span class="user-name-text">User name:</span>
+            <input type="text" class="user-name-input">
+        </div>
+        <input type="button" class="button-checked" value="Проверить тест!">
+    </script>
 
-    <script src="js/script.js"></script>
-    <script src="js/unit.js"></script>
+</div>
+<script src="js/script.js"></script>
+<script src="js/unit.js"></script>
 </body>
 </html>
