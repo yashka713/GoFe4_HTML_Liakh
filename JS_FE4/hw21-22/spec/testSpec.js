@@ -6,18 +6,26 @@ var obj = require('../js/unit.js');
 describe("Проверка самого алгоритма НОД(базовые требования)", function() {
 
     it("НОД(m, n)", function() {
-        var result1;
+        var result1, result2, result3;
         result1 = obj.GCD(18,222);
+        result2 = obj.GCD(11545520000,2020531205);
+        result3 = obj.GCD(11545155315520000,202051554056541554631205);
         expect(result1).toBe(6);
+        expect(result2).toBe(35);
+        expect(result3).toBe(512);
     });
     it("НОД(0, n) = n; НОД(m, 0) = m;НОД(m, m) = m", function() {
-        var result1, result2, result3;
+        var result1, result2, result3, result4, result5;
         result1 = obj.GCD(0,5);
         result2 = obj.GCD(5,0);
         result3 = obj.GCD(5,5);
+        result4 = obj.GCD(0,0);
+        //result5 = obj.GCD(2.5, 3.0);
         expect(result1).toBe(5);
         expect(result2).toBe(5);
         expect(result3).toBe(5);
+        expect(result4).toBeNaN();
+        //expect(result5).toBeUndefined();
     });
     it("НОД(1, n) = 1; НОД(m, 1) = 1;", function() {
         //подготовка (prepare)
@@ -29,14 +37,36 @@ describe("Проверка самого алгоритма НОД(базовые
         expect(result1).toBe(1);
         expect(result2).toBe(1);
     });
+    it("НОД(-m, -n)", function() {
+        var result1, result2, result3;
+        result1 = obj.GCD(-18,-222);
+        result2 = obj.GCD(-11545520000,2020531205);
+        result3 = obj.GCD(11545155315520000,-202051554056541554631205);
+        expect(result1).toBe(6);
+        expect(result2).toBe(35);
+        expect(result3).toBe(512);
+    });
 });
 
-describe("Проверка 'уловок'", function() {
+describe("Факторизации'", function() {
 
-    it("НОД(m, n)", function() {
-        var result1;
-        result1 = obj.GCD(18,222);
-        expect(result1).toBe(6);
+    it("факторизация 'простых' чисел", function() {
+        var result1, result2, result3;
+        result1 = obj.factor(210);
+        result2 = obj.factor(0);
+        result3 = obj.factor(1);
+        expect(result1).toBe('2*3*5*7');
+        expect(result2).toBe('0');
+        expect(result3).toBe('1');
     });
-
+    it("число c 10 знаками", function() {
+        var result1;
+        result1 = obj.factor(1234567891);
+        expect(result1).toBe('1234567891');
+    });
+    it("очень большое число :)", function() {
+        var result1;
+        result1 = obj.factor(8888888888888888);
+        expect(result1).toBe('2*2*2*11*17*73*101*137*5882353');
+    });
 });
