@@ -9,7 +9,7 @@ describe("Проверка самого алгоритма НОД(базовые
         var result1, result2, result3;
         result1 = obj.GCD(18,222);
         result2 = obj.GCD(11545520000,2020531205);
-        result3 = obj.GCD(11545155315520000,202051554056541554631205);
+        result3 = obj.GCD(11545155315520000.55,202051554056541554631205.26);
         expect(result1).toBe(6);
         expect(result2).toBe(35);
         expect(result3).toBe(512);
@@ -20,12 +20,12 @@ describe("Проверка самого алгоритма НОД(базовые
         result2 = obj.GCD(5,0);
         result3 = obj.GCD(5,5);
         result4 = obj.GCD(0,0);
-        //result5 = obj.GCD(2.5, 3.0);
+        result5 = obj.GCD(2.5, 3.0);
         expect(result1).toBe(5);
         expect(result2).toBe(5);
         expect(result3).toBe(5);
         expect(result4).toBeNaN();
-        //expect(result5).toBeUndefined();
+        expect(result5).toBeUndefined();
     });
     it("НОД(1, n) = 1; НОД(m, 1) = 1;", function() {
         //подготовка (prepare)
@@ -41,10 +41,8 @@ describe("Проверка самого алгоритма НОД(базовые
         var result1, result2, result3;
         result1 = obj.GCD(-18,-222);
         result2 = obj.GCD(-11545520000,2020531205);
-        result3 = obj.GCD(11545155315520000,-202051554056541554631205);
         expect(result1).toBe(6);
         expect(result2).toBe(35);
-        expect(result3).toBe(512);
     });
 });
 

@@ -2,6 +2,7 @@ var unit = {
     GCD: function (a, b) {
         try {
             function isInteger(num) {
+                if (num > 1000000000) return num;
                 return (num ^ 0) === num
             };
             a = Math.abs(a);
@@ -72,7 +73,7 @@ var unit = {
     }
 };
 
-console.log(unit.GCD(0, 5));
+console.log(unit.GCD(3.5, 5));
 console.log(unit.factor(3));
 
 //разрешение на вызов файла в nodeJs
