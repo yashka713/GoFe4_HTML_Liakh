@@ -2,7 +2,7 @@
  * Created by Ярик on 19.05.2016.
  */
 // найти файл и подключить его к тестированию
-var obj = require('../js/unit.js');
+var obj = require('../dist/unit.js');
 describe("Проверка самого алгоритма НОД(базовые требования)", function() {
 
     it("НОД(m, n)", function() {
