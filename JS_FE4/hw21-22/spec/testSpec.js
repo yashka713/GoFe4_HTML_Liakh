@@ -49,22 +49,25 @@ describe("Проверка самого алгоритма НОД(базовые
 describe("Факторизации'", function() {
 
     it("факторизация 'простых' чисел", function() {
-        var result1, result2, result3;
+        var result1, result2, result3,result4;
         result1 = obj.factor(210);
         result2 = obj.factor(0);
         result3 = obj.factor(1);
-        expect(result1).toBe('2*3*5*7');
-        expect(result2).toBe('0');
-        expect(result3).toBe('1');
+        result4 = obj.factor(-210);
+        expect(result1).toEqual([2, 3, 5, 7]);
+        expect(result2).toEqual('0');
+        expect(result3).toEqual([1]);
+        expect(result3).toEqual([1]);
+        expect(result4).toEqual(null);
     });
     it("число c 10 знаками", function() {
         var result1;
         result1 = obj.factor(1234567891);
-        expect(result1).toBe('1234567891');
+        expect(result1).toEqual([1234567891]);
     });
     it("очень большое число :)", function() {
         var result1;
         result1 = obj.factor(8888888888888888);
-        expect(result1).toBe('2*2*2*11*17*73*101*137*5882353');
+        expect(result1).toEqual([2, 2, 2, 11, 17, 73, 101, 137, 5882353]);
     });
 });

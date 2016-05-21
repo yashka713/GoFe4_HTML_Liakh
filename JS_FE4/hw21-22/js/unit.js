@@ -4,7 +4,8 @@ var unit = {
             function isInteger(num) {
                 if (num > 1000000000) return num;
                 return (num ^ 0) === num
-            };
+            }
+
             a = Math.abs(a);
             b = Math.abs(b);
             if (isInteger(a) && isInteger(b)) {
@@ -35,37 +36,48 @@ var unit = {
                 if (n1 < 0)  n1 = '(' + n1 + ')';
                 return a;
             } else return undefined;
-        }catch(e) { console.log("!something wrong!") }
-        },
+        } catch (e) {
+            console.log("!something wrong!")
+        }
+    },
     factor: function (n) {
         try {
+            var arr = [];
+            var res;
             if (isNaN(n) || !isFinite(n) || n % 1 || n == 0) return n.toString();
-            if (n < 0) return '-' + factor(-n);
-            var minFactor = leastFactor(n);
-            if (n == minFactor) return n.toString();
-            return minFactor + '*' + unit.factor(n / minFactor);
+            if (n < 0) return null;
+            res = searchFactor(n);
+            arr = res.split(',');
+            for(var i= 0; i< arr.length; i++){
+                arr[i] = parseInt(arr[i]);}
+            return arr;
+
+            function searchFactor(f) {
+                var minFactor = leastFactor(f);
+                if (f == minFactor) return f.toString();
+                return minFactor + ',' + searchFactor(f / minFactor);
 
 //// find the least factor in n by trial division
-            function leastFactor(n) {
-                var arr = [];
-                if (isNaN(n) || !isFinite(n)) return NaN;
-                if (n == 0) return 0;
-                if (n % 1 || n * n < 2) return 1;
-                if (n % 2 == 0) return 2;
-                if (n % 3 == 0) return 3;
-                if (n % 5 == 0) return 5;
-                var m = Math.sqrt(n);
-                for (var i = 7; i <= m; i += 30) {
-                    if (n % i == 0)      return i;
-                    if (n % (i + 4) == 0)  return i + 4;
-                    if (n % (i + 6) == 0)  return i + 6;
-                    if (n % (i + 10) == 0) return i + 10;
-                    if (n % (i + 12) == 0) return i + 12;
-                    if (n % (i + 16) == 0) return i + 16;
-                    if (n % (i + 22) == 0) return i + 22;
-                    if (n % (i + 24) == 0) return i + 24;
+                function leastFactor(n) {
+                    if (isNaN(n) || !isFinite(n)) return NaN;
+                    if (n == 0) return 0;
+                    if (n % 1 || n * n < 2) return 1;
+                    if (n % 2 == 0) return 2;
+                    if (n % 3 == 0) return 3;
+                    if (n % 5 == 0) return 5;
+                    var m = Math.sqrt(n);
+                    for (var i = 7; i <= m; i += 30) {
+                        if (n % i == 0)      return i;
+                        if (n % (i + 4) == 0)  return i + 4;
+                        if (n % (i + 6) == 0)  return i + 6;
+                        if (n % (i + 10) == 0) return i + 10;
+                        if (n % (i + 12) == 0) return i + 12;
+                        if (n % (i + 16) == 0) return i + 16;
+                        if (n % (i + 22) == 0) return i + 22;
+                        if (n % (i + 24) == 0) return i + 24;
+                    }
+                    return n;
                 }
-                return n;
             }
         } catch (e) {
             console.log("!something wrong!")
@@ -73,8 +85,8 @@ var unit = {
     }
 };
 
-console.log(unit.GCD(3.5, 5));
-console.log(unit.factor(3));
+console.log(unit.GCD(524, 24));
+console.log(unit.factor(-210));
 
 //разрешение на вызов файла в nodeJs
 try {
