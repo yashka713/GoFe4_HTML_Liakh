@@ -13,10 +13,10 @@ gulp.task('minify', function(){
 
 
 // Конкатенация и минификация файлов
-gulp.src(['src/js/script.js'])
-    .pipe(concat('production.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('build/js/'));
+//gulp.src(['src/js/script.js'])
+//    .pipe(concat('production.js'))
+//    .pipe(uglify())
+//    .pipe(gulp.dest('build/js/'));
 
 //gulp.src('src/img/**/*')
 //    .pipe(imagemin())
