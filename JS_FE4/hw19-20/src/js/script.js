@@ -1,17 +1,1 @@
-$(function() {
-    $(function() {
-        $('.jcarousel').jcarousel({
-            // Core configuration goes here
-        });
-
-        $('.jcarousel-prev').click(function() {
-            $('.jcarousel').jcarousel('scroll', '-=1');
-        });
-
-        $('.jcarousel-next').click(function() {
-            $('.jcarousel').jcarousel('scroll', '+=1');
-        });
-    });
-
-    //$('.center-content-block').
-});
+$(function () {    $(function () {        $('.jcarousel').jcarousel({            // Core configuration goes here        });        $('.jcarousel-prev').click(function () {            $('.jcarousel').jcarousel('scroll', '-=1');        });        $('.jcarousel-next').click(function () {            $('.jcarousel').jcarousel('scroll', '+=1');        });    });    $(function () {        var toDisplay = 1;$('.bottom-content--title-right').siblings("h2").siblings("p:hidden")        $("article h2").click(function () {                var $this = $(this);                $this                    .next("p")                    .slideToggle("slow")                    .siblings("p:visible")                    .slideUp("slow");                $this.toggleClass("active");                $this.siblings("h2").removeClass("active");            })            .eq(toDisplay).addClass("active")            .next().show();    });});

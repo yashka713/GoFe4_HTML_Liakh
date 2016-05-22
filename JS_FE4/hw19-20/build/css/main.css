@@ -1,1 +1,499 @@
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header,menu, nav, output, ruby, section, summary,time, mark, audio, video {  margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font-family: 'Ubuntu Condensed',Verdana,Arial,sans-serif;  vertical-align: baseline; }/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure,footer, header, menu, nav, section {  display: block; }body {  line-height: 1; }ol, ul {  list-style: none; }blockquote, q {  quotes: none; }blockquote:before, blockquote:after,q:before, q:after {  content: '';  content: none; }table {  border-collapse: collapse;  border-spacing: 0;  font-size: 12px; }.wrapper {  width: 1170px;  margin: 0 auto; }.mainLogo {  margin: 35px 0 0 12px;  width: 20%;  float: left; }  .mainLogo .mainLogo-brand {    margin-left: 8px; }.sprites {  float: right;  width: 250px; }  .sprites .facebook {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 0;    background: url("../img/homework19_20-assets/sprite.png") 0 0; }  .sprites .twitter {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -25px 0; }  .sprites .rss {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -60px 0; }  .sprites .linkedIn {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -90px 0; }  .sprites .skype {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -120px 0;    margin: 48px 3px 0 5px; }  .sprites .facebook:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 0;    background: url("../img/homework19_20-assets/sprite.png") 0 17px; }  .sprites .twitter:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -25px 17px; }  .sprites .rss:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -60px 17px; }  .sprites .linkedIn:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -90px 17px; }  .sprites .skype:hover {    width: 25px;    height: 17px;    display: inline-block;    float: right;    margin: 48px 0 0 5px;    background: url("../img/homework19_20-assets/sprite.png") -120px 17px;    margin: 47px 5px 0 6px; }.logo-sprites {  overflow: hidden; }.header-menu {  display: block;  clear: both;  margin: 36px 0 0 7px;  background-color: #2a2d32; }  .header-menu .header-menu-list {    display: inline-block;    width: 70%; }    .header-menu .header-menu-list .header-menu--item {      overflow: hidden;      display: inline-block;      padding: 20px 40px 18px 39px;      border-right: 1px solid black;      border-bottom: none; }      .header-menu .header-menu-list .header-menu--item .header-menu-_link {        color: white;        font-size: 16px;        text-decoration: none; }      .header-menu .header-menu-list .header-menu--item .header-menu-_link:hover {        color: #f9c73b; }    .header-menu .header-menu-list .mainItem {      background-color: #248cec; }.menu-search {  display: inline-block;  float: right;  position: relative;  margin: 8px 11px 10px 11px; }  .menu-search input[type="text"] {    background-color: #525457;    width: 237px;    height: 33px;    border: 1px solid black;    color: white;    padding-left: 2px; }  .menu-search input[type="button"] {    background: url("../img/homework19_20-assets/search.png");    width: 14px;    height: 13px;    top: 10px;    left: 214px;    border: none;    position: absolute;    cursor: pointer; }.carousel-block .carousel {  width: 1162px;  height: 472px;  margin: 39px 0 0 8px;  position: relative; }.carousel-block .jcarousel {  position: relative;  overflow: hidden; }.carousel-block .jcarousel ul {  width: 20000em;  position: relative; }.carousel-block .jcarousel li {  float: left; }.carousel-block .jcarousel-prev {  position: absolute;  display: inline-block;  width: 15px;  height: 15px;  top: 655px;  left: 656px;  padding: 1px;  background-color: black; }.carousel-block .jcarousel-next {  position: absolute;  display: inline-block;  width: 15px;  height: 15px;  top: 655px;  left: 683px;  padding: 1px;  background-color: black; }.top-content {  overflow: hidden;  margin: 57px 104px; }  .top-content .panel {    width: 375px;    float: left; }    .top-content .panel .number {      font-size: 88px;      color: #e9e9ea;      float: left; }    .top-content .panel .article-params {      margin: 11px 10px 10px 39px; }    .top-content .panel .article {      width: 280px;      height: 150px;      overflow: hidden; }.left-panel .title-article, .center-panel .title-article {  display: inline-block;  font-size: 22px;  margin: 3px 10px 10px 40px; }.left-panel .text-article, .center-panel .text-article {  display: inline-block;  font-size: 15px;  margin: 7px 10px 10px 36px;  line-height: 20px;  color: #cfcfcf; }.left-panel .link-article, .center-panel .link-article {  display: inline-block;  font-size: 16px;  margin: 7px 10px 10px 36px;  text-decoration: none; }.center-panel {  margin-left: 27px; }.right-panel {  margin-left: 18px; }  .right-panel .title-article {    display: inline-block;    font-size: 22px;    margin: 5px 10px 13px 47px; }  .right-panel .text-article {    display: inline-block;    font-size: 15px;    margin: 7px 10px 10px 45px;    line-height: 20px;    color: #cfcfcf; }  .right-panel .link-article {    display: inline-block;    font-size: 16px;    margin: 8px 10px 10px 44px;    text-decoration: none; }.center-content {  clear: both;  overflow: hidden;  margin: 71px 0 0 0;  background-color: #2a2d32;  width: 100%;  height: 500px; }  .center-content .center-content--title {    display: block;    margin: 44px 0 0 101px;    font-size: 27px;    color: white; }  .center-content .center-content-block {    width: 280px;    display: inline-block; }    .center-content .center-content-block .center-content--image {      width: 260px;      height: 260px; }    .center-content .center-content-block .center-content--link {      display: inline-block;      color: white;      text-decoration: none;      font-size: 20px; }.Schedule {  margin: 51px 0 0 99px; }  .Schedule .center-content--link {    margin: 29px 0 0 52px; }.Preventive {  margin: 51px 0 0 15px; }  .Preventive .center-content--link {    margin: 29px 0 0 47px; }.Tire {  margin: 51px 0 0 16px; }  .Tire .center-content--link {    margin: 29px 0 0 52px; }.Repair {  margin: 51px 0 0 18px; }  .Repair .center-content--link {    margin: 29px 0 0 74px; }.center-content-block:hover {  cursor: pointer; }  .center-content-block:hover .center-content--link {    color: #f0d330; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Ubuntu Condensed',Verdana,Arial,sans-serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto; }
+
+.mainLogo {
+  margin: 35px 0 0 12px;
+  width: 20%;
+  float: left; }
+  .mainLogo .mainLogo-brand {
+    margin-left: 8px; }
+
+.sprites {
+  float: right;
+  width: 250px; }
+  .sprites .facebook {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 0;
+    background: url("../img/homework19_20-assets/sprite.png") 0 0; }
+  .sprites .twitter {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -25px 0; }
+  .sprites .rss {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -60px 0; }
+  .sprites .linkedIn {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -90px 0; }
+  .sprites .skype {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -120px 0;
+    margin: 48px 5px 0 5px; }
+  .sprites .facebook:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 0;
+    background: url("../img/homework19_20-assets/sprite.png") 0 17px; }
+  .sprites .twitter:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -25px 17px; }
+  .sprites .rss:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -60px 17px; }
+  .sprites .linkedIn:hover {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    float: right;
+    margin: 48px 0 0 5px;
+    background: url("../img/homework19_20-assets/sprite.png") -90px 17px; }
+
+.skype:hover {
+  width: 25px;
+  height: 17px;
+  display: inline-block;
+  float: right;
+  margin: 48px 3px 0 5px;
+  background: url("../img/homework19_20-assets/sprite.png") -120px 17px; }
+
+.logo-sprites {
+  overflow: hidden; }
+
+.header-menu {
+  margin: 36px 0 0 7px; }
+  .header-menu .header-menu-list {
+    display: inline-block;
+    float: left;
+    background-color: #2a2d32; }
+    .header-menu .header-menu-list .header-menu--item {
+      overflow: hidden;
+      float: left;
+      padding: 20px 40px 18px 39px;
+      border-right: 1px solid black;
+      border-bottom: none; }
+      .header-menu .header-menu-list .header-menu--item .header-menu-_link {
+        color: white;
+        font-size: 16px;
+        text-decoration: none; }
+      .header-menu .header-menu-list .header-menu--item .header-menu-_link:hover {
+        color: #f9c73b; }
+    .header-menu .header-menu-list .mainItem {
+      background-color: #248cec; }
+
+.menu-search {
+  overflow: hidden;
+  position: relative;
+  margin: 8px 0 2px 397px;
+  background-color: #2a2d32; }
+  .menu-search input[type="text"] {
+    background-color: #525457;
+    width: 237px;
+    height: 33px;
+    border: 1px solid black;
+    color: white;
+    padding-left: 2px;
+    float: right;
+    margin: 8.5px; }
+  .menu-search input[type="button"] {
+    background: url("../img/homework19_20-assets/search.png");
+    width: 14px;
+    height: 13px;
+    top: 20px;
+    left: 528px;
+    border: none;
+    position: absolute;
+    cursor: pointer; }
+
+.carousel-block {
+  clear: both; }
+  .carousel-block .carousel {
+    width: 1162px;
+    height: 472px;
+    margin: 39px 0 0 8px;
+    position: relative; }
+  .carousel-block .jcarousel {
+    position: relative;
+    overflow: hidden; }
+  .carousel-block .jcarousel ul {
+    width: 20000em;
+    position: relative; }
+  .carousel-block .jcarousel li {
+    float: left; }
+  .carousel-block .jcarousel-prev {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    top: 655px;
+    left: 656px;
+    padding: 1px;
+    background-color: black; }
+  .carousel-block .jcarousel-next {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    top: 655px;
+    left: 683px;
+    padding: 1px;
+    background-color: black; }
+
+.top-content {
+  overflow: hidden;
+  margin: 57px 104px; }
+  .top-content .panel {
+    width: 375px;
+    float: left; }
+    .top-content .panel .number {
+      font-size: 88px;
+      color: #e9e9ea;
+      float: left; }
+    .top-content .panel .article-params {
+      margin: 11px 10px 10px 39px; }
+    .top-content .panel .article {
+      width: 280px;
+      height: 150px;
+      overflow: hidden; }
+
+.left-panel .title-article, .center-panel .title-article {
+  display: inline-block;
+  font-size: 22px;
+  margin: 3px 10px 10px 40px; }
+
+.left-panel .text-article, .center-panel .text-article {
+  display: inline-block;
+  font-size: 15px;
+  margin: 7px 10px 10px 36px;
+  line-height: 20px;
+  color: #cfcfcf; }
+
+.left-panel .link-article, .center-panel .link-article {
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px 10px 10px 36px;
+  text-decoration: none; }
+
+.center-panel {
+  margin-left: 27px; }
+
+.right-panel {
+  margin-left: 18px; }
+  .right-panel .title-article {
+    display: inline-block;
+    font-size: 22px;
+    margin: 5px 10px 13px 47px; }
+  .right-panel .text-article {
+    display: inline-block;
+    font-size: 15px;
+    margin: 7px 10px 10px 45px;
+    line-height: 20px;
+    color: #cfcfcf; }
+  .right-panel .link-article {
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 10px 10px 44px;
+    text-decoration: none; }
+
+.center-content {
+  clear: both;
+  overflow: hidden;
+  margin: 71px 0 0 0;
+  background-color: #2a2d32;
+  width: 100%;
+  height: 500px; }
+  .center-content .center-content--title {
+    display: block;
+    margin: 44px 0 0 101px;
+    font-size: 27px;
+    color: white; }
+  .center-content .center-content-block {
+    width: 280px;
+    display: inline-block;
+    position: relative; }
+    .center-content .center-content-block .center-content--image {
+      width: 260px;
+      height: 260px; }
+    .center-content .center-content-block .center-content--link {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-size: 20px; }
+    .center-content .center-content-block .center-content--span {
+      background-color: rgba(46, 140, 227, 0.8);
+      font-size: 100px;
+      color: white;
+      vertical-align: middle;
+      padding-top: 70px;
+      text-align: center;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 190px;
+      visibility: hidden; }
+
+.Schedule {
+  margin: 51px 0 0 99px; }
+  .Schedule .center-content--link {
+    margin: 29px 0 0 52px; }
+
+.Preventive {
+  margin: 51px 0 0 15px; }
+  .Preventive .center-content--link {
+    margin: 29px 0 0 47px; }
+
+.Tire {
+  margin: 51px 0 0 16px; }
+  .Tire .center-content--link {
+    margin: 29px 0 0 52px; }
+
+.Repair {
+  margin: 51px 0 0 18px; }
+  .Repair .center-content--link {
+    margin: 29px 0 0 74px; }
+
+.center-content-block:hover {
+  cursor: pointer; }
+  .center-content-block:hover .center-content--link {
+    color: #f0d330; }
+  .center-content-block:hover .center-content--span {
+    visibility: visible; }
+
+.bottom-content--img, .bottom-content-data .bot-img1, .first-article .bot-img1, .bottom-content-data .bot-img2, .second-article .bot-img2 {
+  width: 150px;
+  height: 150px;
+  overflow: hidden; }
+
+.bottom-content {
+  overflow: hidden;
+  height: 543px;
+  background-color: #f7f7f7; }
+
+.blue {
+  color: #248cec; }
+
+.bottom-content--left {
+  width: 50%;
+  overflow: hidden; }
+  .bottom-content--left .bottom-content--title-left {
+    font-size: 26px;
+    margin: 59px 15px 15px 9px; }
+  .bottom-content--left .bottom-content--news {
+    clear: both;
+    margin-left: 4px; }
+    .bottom-content--left .bottom-content--news .bottom-content--title-article {
+      font-weight: bold;
+      font-size: 17px;
+      margin: 24px 0 0 10px; }
+    .bottom-content--left .bottom-content--news .bottom-content--comments-article {
+      margin: 7px 10px 10px 8px; }
+      .bottom-content--left .bottom-content--news .bottom-content--comments-article .comments-article {
+        margin: 7px 0px 11px 11px; }
+        .bottom-content--left .bottom-content--news .bottom-content--comments-article .comments-article .comments-kol {
+          font-size: 14px; }
+    .bottom-content--left .bottom-content--news .bottom-content--text {
+      width: 380px;
+      margin: 24px 0 10px 8px;
+      line-height: 19px;
+      font-size: 15px; }
+
+.bottom-content-data, .first-article {
+  position: relative;
+  float: left; }
+  .bottom-content-data .bot-img1, .first-article .bot-img1 {
+    margin: 30px 15px 15px 8px; }
+  .bottom-content-data .bottom-content--month1, .first-article .bottom-content--month1 {
+    position: absolute;
+    left: -10px;
+    font-size: 16px;
+    color: white;
+    background-color: #248cec;
+    padding: 12px 10px 10px 10px;
+    top: 43px; }
+  .bottom-content-data .bottom-content--day1, .first-article .bottom-content--day1 {
+    position: absolute;
+    left: -10px;
+    font-size: 22px;
+    color: black;
+    background-color: #f4b60d;
+    padding: 10px 14px 10px 9px;
+    top: 81px; }
+
+.bottom-content-data, .second-article {
+  position: relative;
+  float: left; }
+  .bottom-content-data .bot-img2, .second-article .bot-img2 {
+    margin: 13px 15px 15px 8px; }
+  .bottom-content-data .bottom-content--month2, .second-article .bottom-content--month2 {
+    position: absolute;
+    left: -10px;
+    font-size: 16px;
+    color: white;
+    background-color: #248cec;
+    padding: 12px 10px 10px 10px;
+    top: 25px; }
+  .bottom-content-data .bottom-content--day2, .second-article .bottom-content--day2 {
+    position: absolute;
+    left: -10px;
+    font-size: 22px;
+    color: black;
+    background-color: #f4b60d;
+    padding: 10px 14px 10px 9px;
+    top: 63px; }
+
+.bottom-content--article1 {
+  margin: 10px 10px 10px 10px;
+  float: left; }
+
+.bottom-content--article2 {
+  margin: -10px 10px 10px 10px;
+  float: left; }
+
+.bottom-content--right {
+  margin: -477px 0 0 0;
+  float: right;
+  width: 49%; }
+  .bottom-content--right .bottom-content--title-right {
+    font-size: 26px;
+    margin: 59px 0 45px 11px; }
+
+/**/
+article {
+  overflow: hidden; }
+
+article h2 {
+  border-bottom: 1px solid #ccc;
+  background-color: #f4b60d;
+  padding: 5px;
+  cursor: pointer;
+  vertical-align: baseline; }
+
+article p {
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  text-align: justify; }
+
+article p a {
+  text-decoration: underline; }
+
+article img {
+  margin: 4px 8px 4px 4px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+
+.slides article h2 {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: #333;
+  background: #f5f5f5 url(../img/homework19_20-assets/arrows.png) no-repeat 99% -24px;
+  cursor: pointer; }
+
+.slides article h2.active {
+  background-position: 99% 6px; }
+
+.imgPlus {
+  font-size: 35px;
+  padding: 5px; }
+
+.panel-logo {
+  clear: both;
+  margin: 0 10px 10px 0;
+  float: left;
+  padding: 82px 25px 89px 25px; }
+
+.logo1 {
+  margin: 0 0 0 71px; }
+
+.logo2 {
+  margin: 0 0 0 44px; }
+
+.logo3 {
+  margin: 3px 0 0 61px; }
+
+.logo4 {
+  margin: 0 0 0 45px; }
+
+.logo5 {
+  margin: 0 0 0 56px; }
+
+.logo6 {
+  margin: 0 0 0 31px; }

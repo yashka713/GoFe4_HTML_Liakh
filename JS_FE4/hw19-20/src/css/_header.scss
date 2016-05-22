@@ -1,167 +1,1 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: green;
-$marginLogo: 35px 0 0 12px;
-$menuColor: #2a2d32;
-
-@mixin wrapper($wrapperWidth, $wrapperMargin) {
-  width: $wrapperWidth;
-  margin: $wrapperMargin auto;
-}
-
-@mixin sprites($spriteX, $spriteY, $marginLeft) {
-  width: 25px;
-  height: 17px;
-  display: inline-block;
-  float: right;
-  margin: 48px 0 0 $marginLeft;
-  background: url("../img/homework19_20-assets/sprite.png") $spriteX $spriteY;
-}
-
-@mixin button-carousel($top, $left) {
-  position: absolute;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  top: $top;
-  left: $left;
-  padding: 1px;
-  background-color: black;
-}
-
-.wrapper {
-  @include wrapper(1170px, 0);
-}
-
-.mainLogo {
-  margin: $marginLogo;
-  width: 20%;
-  float: left;
-  .mainLogo-brand {
-    margin-left: 8px;
-  }
-}
-
-.sprites {
-  float: right;
-  width: 250px;
-  .facebook {
-    @include sprites(0, 0, 0);
-  }
-  .twitter {
-    @include sprites(-25px, 0, 5px);
-  }
-  .rss {
-    @include sprites(-60px, 0, 5px);
-  }
-  .linkedIn {
-    @include sprites(-90px, 0, 5px);
-  }
-  .skype {
-    @include sprites(-120px, 0, 5px);
-    margin: 48px 3px 0 5px;
-  }
-  //hover
-  .facebook:hover {
-    @include sprites(0, 17px, 0);
-  }
-  .twitter:hover {
-    @include sprites(-25px, 17px, 5px);
-  }
-  .rss:hover {
-    @include sprites(-60px, 17px, 5px);
-  }
-  .linkedIn:hover {
-    @include sprites(-90px, 17px, 5px);
-  }
-  .skype:hover {
-    @include sprites(-120px, 17px, 5px);
-    margin: 47px 5px 0 6px;
-  }
-}
-
-.logo-sprites {
-  overflow: hidden;
-}
-
-.header-menu {
-  display: block;
-  clear: both;
-  margin: 36px 0 0 7px;
-  background-color: $menuColor;
-  .header-menu-list {
-    display: inline-block;
-    width: 70%;
-    .header-menu--item {
-      overflow: hidden;
-      display: inline-block;
-      padding: 20px 40px 18px 39px;
-      border-right: 1px solid black;
-      border-bottom: none;
-      .header-menu-_link {
-        color: white;
-        font-size: 16px;
-        text-decoration: none;
-      }
-      .header-menu-_link:hover {
-        color: #f9c73b;
-      }
-    }
-    .mainItem {
-      background-color: #248cec;
-    }
-  }
-}
-
-.menu-search {
-  display: inline-block;
-  float: right;
-  position: relative;
-  margin: 8px 11px 10px 11px;
-  input[type="text"] {
-    background-color: #525457;
-    width: 237px;
-    height: 33px;
-    border: 1px solid black;
-    color: white;
-    padding-left: 2px;
-  }
-  input[type="button"] {
-    background: url("../img/homework19_20-assets/search.png");
-    width: 14px;
-    height: 13px;
-    top: 10px;
-    left: 214px;
-    border: none;
-    position: absolute;
-    cursor: pointer;
-  }
-}
-
-.carousel-block {
-  .carousel {
-    width: 1162px;
-    height: 472px;
-    margin: 39px 0 0 8px;
-    position: relative;
-  }
-
-  .jcarousel {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .jcarousel ul {
-    width: 20000em;
-    position: relative;
-  }
-
-  .jcarousel li {
-    float: left;
-  }
-  .jcarousel-prev {
-    @include button-carousel(655px, 656px);
-  }
-  .jcarousel-next {
-    @include button-carousel(655px, 683px);
-  }
-}
+$font-stack: Helvetica, sans-serif;$primary-color: green;$marginLogo: 35px 0 0 12px;$menuColor: #2a2d32;@mixin wrapper($wrapperWidth, $wrapperMargin) {  width: $wrapperWidth;  margin: $wrapperMargin auto;}@mixin sprites($spriteX, $spriteY, $marginLeft) {  width: 25px;  height: 17px;  display: inline-block;  float: right;  margin: 48px 0 0 $marginLeft;  background: url("../img/homework19_20-assets/sprite.png") $spriteX $spriteY;}@mixin button-carousel($top, $left) {  position: absolute;  display: inline-block;  width: 15px;  height: 15px;  top: $top;  left: $left;  padding: 1px;  background-color: black;}.wrapper {  @include wrapper(1170px, 0);}.mainLogo {  margin: $marginLogo;  width: 20%;  float: left;  .mainLogo-brand {    margin-left: 8px;  }}.sprites {  float: right;  width: 250px;  .facebook {    @include sprites(0, 0, 0);  }  .twitter {    @include sprites(-25px, 0, 5px);  }  .rss {    @include sprites(-60px, 0, 5px);  }  .linkedIn {    @include sprites(-90px, 0, 5px);  }  .skype {    @include sprites(-120px, 0, 5px);    margin: 48px 5px 0 5px;  }  //hover  .facebook:hover {    @include sprites(0, 17px, 0);  }  .twitter:hover {    @include sprites(-25px, 17px, 5px);  }  .rss:hover {    @include sprites(-60px, 17px, 5px);  }  .linkedIn:hover {    @include sprites(-90px, 17px, 5px);  }}.skype:hover {  //@include sprites(, , 0);  width: 25px;  height: 17px;  display: inline-block;  float: right;  margin: 48px 3px 0 5px;  background: url("../img/homework19_20-assets/sprite.png") -120px 17px;}.logo-sprites {  overflow: hidden;}.header-menu {  margin: 36px 0 0 7px;  //background-color: $menuColor;  .header-menu-list {    display: inline-block;    float: left;    background-color: $menuColor;    .header-menu--item {      overflow: hidden;      float: left;      padding: 20px 40px 18px 39px;      border-right: 1px solid black;      border-bottom: none;      .header-menu-_link {        color: white;        font-size: 16px;        text-decoration: none;      }      .header-menu-_link:hover {        color: #f9c73b;      }    }    .mainItem {      background-color: #248cec;    }  }}.menu-search {  overflow: hidden;  position: relative;  margin: 8px 0 2px 397px;  background-color: $menuColor;  input[type="text"] {    background-color: #525457;    width: 237px;    height: 33px;    border: 1px solid black;    color: white;    padding-left: 2px;    float: right;    margin: 8.5px;  }  input[type="button"] {    background: url("../img/homework19_20-assets/search.png");    width: 14px;    height: 13px;    top: 20px;    left: 528px;    border: none;    position: absolute;    cursor: pointer;  }}.carousel-block {  clear: both;  .carousel {    width: 1162px;    height: 472px;    margin: 39px 0 0 8px;    position: relative;  }  .jcarousel {    position: relative;    overflow: hidden;  }  .jcarousel ul {    width: 20000em;    position: relative;  }  .jcarousel li {    float: left;  }  .jcarousel-prev {    @include button-carousel(655px, 656px);  }  .jcarousel-next {    @include button-carousel(655px, 683px);  }}
