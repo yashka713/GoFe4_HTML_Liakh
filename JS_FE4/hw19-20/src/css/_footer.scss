@@ -1,24 +1,24 @@
-.footer-link{
+.footer-link {
   clear: both;
   background-color: #2a2d32;
   height: 325px;
-  .link-block{
+  .link-block {
     width: 23%;
     float: left;
   }
-  .one{
+  .one {
     margin: 0;
   }
-  .two{
+  .two {
     margin-left: 33px;
   }
-  .three{
+  .three {
     margin-left: 30px;
   }
-  .four{
+  .four {
     margin-left: 30px;
   }
-  .title-one{
+  .title-one {
     color: white;
     font-size: 16px;
     padding: 60px 20px 34px 11px;
@@ -26,40 +26,71 @@
     font-weight: bolder;
     overflow: hidden;
   }
-  .footer-list-one{
+  .footer-list-one {
     margin: 15px 0 0 0;
   }
 }
-.footer-item{
+
+.footer-item {
   border-bottom: 1px solid gray;
   width: 91%;
   padding: 9.4px 8px;
-  .footer-link{
+  .footer-link {
     text-decoration: none;
     color: gray;
   }
-  .footer-link:hover{
-    color:#248cec;
+  .footer-link:hover {
+    color: #248cec;
   }
 }
-.footer-kontakt{
+
+.footer-kontakt {
   clear: both;
   background-color: #35383c;
   height: 60px;
-  .footer-address{
-    float: left;
-    padding: 21px 7px 0 7px;
-    .address-icon, .telephone-icon{
-      width: 15px;
-      height: 15px;
+  color: gray;
+  font-size: 10px;
+  .footer-address {
+    @extend .alignment;
+    padding: 19px 7px 0 7px;
+    .address-icon {
+      @extend .icon;
     }
-    .address-text, .telephone-text{
-      color: gray;
-      margin-left: 9px;
-      font-size: 14px;
+    .address-text, .telephone-text, .mail-text {
+      margin-left: 15px;
     }
   }
-  .footer-telephone{
-    margin-left: 15px;
+  .footer-telephone {
+    padding: 21px 0 0 7px;
+    margin-left: 40px;
+    @extend .alignment;
+    .telephone-icon {
+      @extend .icon;
+    }
   }
+  .footer-mail {
+    @extend .alignment;
+    padding: 20px 7px 0 7px;
+    margin-left: 52px;
+    .mail-icon {
+      @extend .icon;
+    }
+  }
+}
+
+.footer-company {
+  @extend .alignment;
+  margin-left: 418px;
+  padding: 22px 7px 0 7px;
+}
+
+.alignment {
+  float: left;
+  font-size: 13px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
 }
